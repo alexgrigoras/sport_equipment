@@ -22,6 +22,33 @@ namespace SportEquipment
 {
     public class ZumbaUser : User
     {
-        
+        #region Public Ovverride Methods
+
+        public override void SelectTrainer(string trainer)
+        {
+            _trainer = trainer;
+        }
+
+        public override void SelectFood(string food)
+        {
+            _food = food;
+        }
+
+        public override void SelectClothes(string clothes)
+        {
+            _clothes = clothes;
+        }
+
+        public override void SelectEquipment(string equipment)
+        {
+            _equipment = equipment;
+        }
+
+        public override void PrintTraining()
+        {
+            // print the training data to file
+        }
+
+        #endregion
     }
 }

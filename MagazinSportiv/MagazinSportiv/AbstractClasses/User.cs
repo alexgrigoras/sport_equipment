@@ -33,14 +33,28 @@ namespace SportEquipment
 
         #region Public Methods
 
+        /// <function>SelectTrainer</function>
+        /// <param name="trainer">The name of the trainer</param>
+        /// <summary>Select the name of the trainer</summary>
         public abstract void SelectTrainer(string trainer);
 
+        /// <function>SelectFood</function>
+        /// <param name="food">The name of the food</param>
+        /// <summary>Select the name of the food</summary>
         public abstract void SelectFood(string food);
 
+        /// <function>SelectClothes</function>
+        /// <param name="clothes">The name of the clothes</param>
+        /// <summary>Select the name of the clothes</summary>
         public abstract void SelectClothes(string clothes);
 
+        /// <function>SelectEquipment</function>
+        /// <param name="equipment">The name of the trainer</param>
+        /// <summary>Select the name of the trainer</summary>
         public abstract void SelectEquipment(string equipment);
 
+        /// <function>PrintTraining</function>
+        /// <summary>Print the training  to the file</summary>
         public abstract void PrintTraining();
 
         #endregion

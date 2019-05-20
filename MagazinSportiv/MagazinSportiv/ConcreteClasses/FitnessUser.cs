@@ -23,8 +23,7 @@ namespace SportEquipment
     public class FitnessUser : User
     {
         #region Public Ovverride Methods
-
-
+        
         public override void SelectTrainer(string trainer)
         {
             _trainer = trainer;          
@@ -47,7 +46,7 @@ namespace SportEquipment
 
         public override void PrintTraining()
         {
-            // print the data to file
+            // print the training data to file
         }
 
         #endregion
