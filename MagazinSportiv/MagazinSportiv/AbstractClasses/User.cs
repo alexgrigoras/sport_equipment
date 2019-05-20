@@ -33,15 +33,15 @@ namespace SportEquipment
 
         #region Public Methods
 
-        public abstract void selectTrainer(string trainer);
+        public abstract void SelectTrainer(string trainer);
 
-        public abstract void selectFood(string food);
+        public abstract void SelectFood(string food);
 
-        public abstract void selectClothes(string clothes);
+        public abstract void SelectClothes(string clothes);
 
-        public abstract void selectEquipment(string equipment);
+        public abstract void SelectEquipment(string equipment);
 
-        public abstract void printTraining();
+        public abstract void PrintTraining();
 
         #endregion
     }

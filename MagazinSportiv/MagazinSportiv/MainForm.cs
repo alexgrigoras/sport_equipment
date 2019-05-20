@@ -46,16 +46,25 @@ namespace SportEquipment
             _userType = userType;
 
             _userFactory = new UserFactory();
+
+            _activeUser = _userFactory.CreateUser(_userType);
+
+            GetDataFromDB();
         }
 
         #endregion
 
         #region Private Methods
 
+        private void GetDataFromDB()
+        {
+            // get data
+
+            // put data to interface
+        }
+
         private void createTraining()
         {
-            User _activeUser = _userFactory.CreateUser(_userType);
-
             // parameters for the training program
             string trainer = "";
             string food = "";
@@ -66,13 +75,15 @@ namespace SportEquipment
 
 
             // create training program 
-             _activeUser.selectTrainer(trainer);
-             _activeUser.selectFood(food);
-             _activeUser.selectClothes(clothes);
-             _activeUser.selectEquipment(equipment);
+             _activeUser.SelectTrainer(trainer);
+             _activeUser.SelectFood(food);
+             _activeUser.SelectClothes(clothes);
+             _activeUser.SelectEquipment(equipment);
 
             // display training program
 
+            // print training program
+            _activeUser.PrintTraining();
         }
 
         #endregion

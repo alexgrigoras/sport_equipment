@@ -25,27 +25,27 @@ namespace SportEquipment
         #region Public Ovverride Methods
 
 
-        public override void selectTrainer(string trainer)
+        public override void SelectTrainer(string trainer)
         {
             _trainer = trainer;          
         }
 
-        public override void selectFood(string food)
+        public override void SelectFood(string food)
         {
             _food = food;
         }
 
-        public override void selectClothes(string clothes)
+        public override void SelectClothes(string clothes)
         {
             _clothes = clothes;
         }
 
-        public override void selectEquipment(string equipment)
+        public override void SelectEquipment(string equipment)
         {
             _equipment = equipment;
         }
 
-        public override void printTraining()
+        public override void PrintTraining()
         {
             // print the data to file
         }
