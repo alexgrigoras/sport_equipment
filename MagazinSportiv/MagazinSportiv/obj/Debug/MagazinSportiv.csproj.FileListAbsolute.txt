@@ -1,0 +1,5 @@
+E:\Facultate\Anul 4\Semestrul II\IP\Proiect\Proiect_nou\MagazinSportiv\MagazinSportiv\obj\Debug\MagazinSportiv.csprojAssemblyReference.cache
+E:\Facultate\Anul 4\Semestrul II\IP\Proiect\Proiect_nou\MagazinSportiv\MagazinSportiv\obj\Debug\MagazinSportiv.LoginForm.resources
+E:\Facultate\Anul 4\Semestrul II\IP\Proiect\Proiect_nou\MagazinSportiv\MagazinSportiv\obj\Debug\MagazinSportiv.Properties.Resources.resources
+E:\Facultate\Anul 4\Semestrul II\IP\Proiect\Proiect_nou\MagazinSportiv\MagazinSportiv\obj\Debug\MagazinSportiv.csproj.GenerateResource.cache
+E:\Facultate\Anul 4\Semestrul II\IP\Proiect\Proiect_nou\MagazinSportiv\MagazinSportiv\obj\Debug\MagazinSportiv.csproj.CoreCompileInputs.cache
