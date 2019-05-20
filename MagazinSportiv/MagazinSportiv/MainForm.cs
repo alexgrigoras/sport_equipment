@@ -56,14 +56,20 @@ namespace SportEquipment
 
         #region Private Methods
 
+        /// <function>GetDataFromDB</function>
+        /// <summary>Get the data from the MongoDB and display it on interface</summary>
         private void GetDataFromDB()
         {
-            // get data
+            // get data from mongoDB
+
 
             // put data to interface
+
         }
 
-        private void createTraining()
+        /// <function>CreateTraining</function>
+        /// <summary>Create a training program</summary>
+        private void CreateTraining()
         {
             // parameters for the training program
             string trainer = "";
@@ -82,6 +88,12 @@ namespace SportEquipment
 
             // display training program
 
+        }
+
+        /// <function>SaveTraining</function>
+        /// <summary>Save the training program to file</summary>
+        private void SaveTraining()
+        {
             // print training program
             _activeUser.PrintTraining();
         }
