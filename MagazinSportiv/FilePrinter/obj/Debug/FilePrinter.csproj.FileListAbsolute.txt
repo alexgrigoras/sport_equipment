@@ -1,0 +1,6 @@
+E:\Facultate\Anul 4\Semestrul II\IP\Proiect\sport_equipment\MagazinSportiv\FilePrinter\bin\Debug\FilePrinter.dll
+E:\Facultate\Anul 4\Semestrul II\IP\Proiect\sport_equipment\MagazinSportiv\FilePrinter\bin\Debug\FilePrinter.pdb
+E:\Facultate\Anul 4\Semestrul II\IP\Proiect\sport_equipment\MagazinSportiv\FilePrinter\obj\Debug\FilePrinter.csprojAssemblyReference.cache
+E:\Facultate\Anul 4\Semestrul II\IP\Proiect\sport_equipment\MagazinSportiv\FilePrinter\obj\Debug\FilePrinter.csproj.CoreCompileInputs.cache
+E:\Facultate\Anul 4\Semestrul II\IP\Proiect\sport_equipment\MagazinSportiv\FilePrinter\obj\Debug\FilePrinter.dll
+E:\Facultate\Anul 4\Semestrul II\IP\Proiect\sport_equipment\MagazinSportiv\FilePrinter\obj\Debug\FilePrinter.pdb
