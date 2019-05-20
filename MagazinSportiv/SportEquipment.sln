@@ -5,6 +5,15 @@ VisualStudioVersion = 16.0.28803.352
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SportEquipment", "MagazinSportiv\SportEquipment.csproj", "{4CA3E352-E2F0-4918-BD15-43864DFA5705}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FilePrinter", "FilePrinter\FilePrinter.csproj", "{DD2E05A7-37D3-42AD-A991-E4CDA848B496}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SportEquipmentUnitTest", "SportEquipmentUnitTest\SportEquipmentUnitTest.csproj", "{68B81768-1EE8-492F-BCD5-9F0673D75EB2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{1374AE50-5829-47FD-8D0A-38DDDB06C80D}"
+	ProjectSection(SolutionItems) = preProject
+		..\README.md = ..\README.md
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +24,14 @@ Global
 		{4CA3E352-E2F0-4918-BD15-43864DFA5705}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4CA3E352-E2F0-4918-BD15-43864DFA5705}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4CA3E352-E2F0-4918-BD15-43864DFA5705}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD2E05A7-37D3-42AD-A991-E4CDA848B496}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD2E05A7-37D3-42AD-A991-E4CDA848B496}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD2E05A7-37D3-42AD-A991-E4CDA848B496}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD2E05A7-37D3-42AD-A991-E4CDA848B496}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68B81768-1EE8-492F-BCD5-9F0673D75EB2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68B81768-1EE8-492F-BCD5-9F0673D75EB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68B81768-1EE8-492F-BCD5-9F0673D75EB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68B81768-1EE8-492F-BCD5-9F0673D75EB2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

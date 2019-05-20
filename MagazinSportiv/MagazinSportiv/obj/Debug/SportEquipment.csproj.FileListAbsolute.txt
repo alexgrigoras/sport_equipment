@@ -1,0 +1,10 @@
+E:\Facultate\Anul 4\Semestrul II\IP\Proiect\sport_equipment\MagazinSportiv\MagazinSportiv\bin\Debug\MagazinSportiv.exe.config
+E:\Facultate\Anul 4\Semestrul II\IP\Proiect\sport_equipment\MagazinSportiv\MagazinSportiv\bin\Debug\MagazinSportiv.exe
+E:\Facultate\Anul 4\Semestrul II\IP\Proiect\sport_equipment\MagazinSportiv\MagazinSportiv\bin\Debug\MagazinSportiv.pdb
+E:\Facultate\Anul 4\Semestrul II\IP\Proiect\sport_equipment\MagazinSportiv\MagazinSportiv\obj\Debug\SportEquipment.csprojAssemblyReference.cache
+E:\Facultate\Anul 4\Semestrul II\IP\Proiect\sport_equipment\MagazinSportiv\MagazinSportiv\obj\Debug\SportEquipment.LoginForm.resources
+E:\Facultate\Anul 4\Semestrul II\IP\Proiect\sport_equipment\MagazinSportiv\MagazinSportiv\obj\Debug\MagazinSportiv.Properties.Resources.resources
+E:\Facultate\Anul 4\Semestrul II\IP\Proiect\sport_equipment\MagazinSportiv\MagazinSportiv\obj\Debug\SportEquipment.csproj.GenerateResource.cache
+E:\Facultate\Anul 4\Semestrul II\IP\Proiect\sport_equipment\MagazinSportiv\MagazinSportiv\obj\Debug\SportEquipment.csproj.CoreCompileInputs.cache
+E:\Facultate\Anul 4\Semestrul II\IP\Proiect\sport_equipment\MagazinSportiv\MagazinSportiv\obj\Debug\MagazinSportiv.exe
+E:\Facultate\Anul 4\Semestrul II\IP\Proiect\sport_equipment\MagazinSportiv\MagazinSportiv\obj\Debug\MagazinSportiv.pdb
