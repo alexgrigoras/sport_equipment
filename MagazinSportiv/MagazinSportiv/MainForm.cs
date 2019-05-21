@@ -19,6 +19,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MongoDB.Driver;
+using MongoDB.Bson;
 
 #endregion
 
@@ -49,7 +51,30 @@ namespace SportEquipment
 
             _activeUser = _userFactory.CreateUser(_userType);
 
-            GetDataFromDB();
+            // de pus in callback la butonul de alegere echipament
+
+            string category = "";   // get data from user interface
+
+            string userTypeString = "";
+
+            if (userType == UserType.FitnessUser)
+            {
+                userTypeString = "Fitness";
+            }
+            else if (userType == UserType.ZumbaUser)
+            {
+                userTypeString = "Zumba";
+            }
+            else if (userType == UserType.AerobicUser)
+            {
+                userTypeString = "Aerobic";
+            }
+            else
+            {
+                throw new Exception("Tipul utilizatorului este invalid");
+            }
+
+            List<string> productList = GetDataFromDB(userTypeString, category);
         }
 
         #endregion
@@ -57,15 +82,30 @@ namespace SportEquipment
         #region Private Methods
 
         /// <function>GetDataFromDB</function>
+        /// <return>A list of the results</return>
         /// <summary>Get the data from the MongoDB and display it on interface</summary>
-        private void GetDataFromDB()
+        private List<string> GetDataFromDB(string category, string type)
         {
-            // get data from mongoDB
-            List<string> trainer;
+            var client = new MongoClient();
+            var db = client.GetDatabase("Proiect");
+            var col = db.GetCollection<BsonDocument>("Produs");
 
+            var filter = Builders<BsonDocument>.Filter.Eq("Categorie", category);
+            filter &= (Builders<BsonDocument>.Filter.Eq("Tip_Produs", type));
 
-            // put data to interface
+            var projectionDefinition = Builders<BsonDocument>.Projection.Include("Nume_Produs").Exclude("_id");
 
+            var document = col.Find(filter).Project(projectionDefinition).ToList();
+
+            List<string> listaNoua = new List<string>();
+
+            document.ForEach(doc =>
+            {
+                var val = doc.GetElement("Nume_Produs").Value.ToString();
+                listaNoua.Add(val);
+            });
+
+            return listaNoua;
         }
 
         /// <function>CreateTraining</function>

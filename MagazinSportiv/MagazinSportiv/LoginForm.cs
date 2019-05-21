@@ -44,14 +44,14 @@ namespace SportEquipment
 
         /// <function>ButtonLogin_Click</function>
         /// <param name="sender"></param>
-        /// <param name="EventArgs"></param>
-        /// <summary>Login check for the created user</summary>
+        /// <param name="e"></param>
+        /// <summary>Callback for login button</summary>
         private void ButtonLogin_Click(object sender, EventArgs e)
         {
             string username = "";
             string password = "";
             UserType user;
-            MainForm frm = null;
+            MainForm frm;
 
             user = ValidateLogin(username, password);
 
@@ -70,10 +70,15 @@ namespace SportEquipment
         /// <function>ButtonCreateUser_Click</function>
         /// <param name="sender"></param>
         /// <param name="EventArgs"></param>
-        /// <summary>Create a new user if it doesn't exists</summary>
+        /// <summary>Callback for create user button</summary>
         private void ButtonCreateUser_Click(object sender, EventArgs e)
         {
-
+            // get data from user interface
+            string username = "";
+            string password = "";
+            string type = "";
+            
+            CreateUserOnDB(username, password, type);
         }
 
         #endregion
@@ -84,13 +89,13 @@ namespace SportEquipment
         /// <param name="username">The username of the user</param>
         /// <param name="password">The password of the user</param>
         /// <returns>Returns the user type</returns>
-        /// <summary>Create a new user if it doesn't exists</summary>
+        /// <summary>Login check for the created user</summary>
         private UserType ValidateLogin(string username, string password)
         {
-            UserType userType = UserType.InvalidUser;
+            UserType userType;
 
             // mongodb access for credentials validation
-            string result = LoginVerification(username, password);
+            string result = CheckDBForUser(username, password);
 
             if (result == "Fitness")
             {
@@ -104,18 +109,27 @@ namespace SportEquipment
             {
                 userType = UserType.AerobicUser;
             }
+            else
+            {
+                userType = UserType.InvalidUser;
+            }
 
             // return the selected user
             return userType;
         }
 
-        private string LoginVerification(string userName, string password)
+        /// <function>CheckDBForUser</function>
+        /// <param name="username">The username of the user</param>
+        /// <param name="password">The password of the user</param>
+        /// <returns>Returns the user type</returns>
+        /// <summary>Check if user exists in DB</summary>
+        private string CheckDBForUser(string username, string password)
         {
             var client = new MongoClient();
             var db = client.GetDatabase("ProiectIP");
             var col = db.GetCollection<BsonDocument>("Utilizatori");
 
-            var filter = Builders<BsonDocument>.Filter.Eq("Nume_Utilizator", userName);
+            var filter = Builders<BsonDocument>.Filter.Eq("Nume_Utilizator", username);
             filter &= (Builders<BsonDocument>.Filter.Eq("Parola", password));
 
             var projectionDefinition = Builders<BsonDocument>.Projection.Include("Tip_Utilizator").Exclude("_id");
@@ -124,6 +138,25 @@ namespace SportEquipment
             var value = document.GetElement("Tip_Utilizator").Value.ToString();
 
             return value;
+        }
+
+        /// <function>CheckDBForUser</function>
+        /// <param name="username">The username of the user</param>
+        /// <param name="password">The password of the user</param>
+        /// <returns>Returns the user type</returns>
+        /// <summary>Check if user exists in DB</summary>
+        static void CreateUserOnDB(string username, string password, string type)
+        {
+            var client = new MongoClient();
+            var db = client.GetDatabase("Proiect");
+            var col = db.GetCollection<BsonDocument>("User");
+
+            var document = new BsonDocument{
+                { "Nume_Utilizator", username },
+                { "Parola", password },
+                { "Tip_Utilizator", type }};
+
+            col.InsertOne(document);
         }
 
         #endregion
