@@ -12,19 +12,21 @@
 
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 #endregion
 
-namespace MagazinSportiv
+namespace LibPrinter
 {
     public class Printer
     {
         #region Public Fields
 
         private string _fileName;
+        private StreamWriter _fileWriter;
 
         #endregion
 
@@ -36,22 +38,21 @@ namespace MagazinSportiv
         public Printer(string fileName)
         {
             _fileName = fileName;
-
-            OpenFile();
         }
 
         /// <function>OpenFile</function>
         /// <summary>Open a file or create one</summary>
-        private void OpenFile()
+        public void OpenFile()
         {
-            // open the file
+            _fileWriter = new StreamWriter(_fileName);
         }
 
         /// <function>CloseFile</function>
         /// <summary>Close the opened file</summary>
-        private void CloseFile()
+        public void CloseFile()
         {
             // close the file
+            _fileWriter.Close();
         }
 
         /// <function>Write</function>
@@ -59,8 +60,7 @@ namespace MagazinSportiv
         /// <summary>Write the text to the file</summary>
         public void Write(string text)
         {
-            // write to file
-
+            _fileWriter.Write(text);
         }
 
         /// <function>Write</function>
@@ -68,7 +68,7 @@ namespace MagazinSportiv
         /// <summary>Write the text to the file and add '/n' character</summary>
         public void Writeln(string text)
         {
-
+            _fileWriter.WriteLine(text);
         }
 
         #endregion
