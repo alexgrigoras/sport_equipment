@@ -42,3 +42,5 @@ C:\Users\alex_\Source\Repos\sport_equipment\MagazinSportiv\MagazinSportiv\obj\De
 C:\Users\alex_\Source\Repos\sport_equipment\MagazinSportiv\MagazinSportiv\obj\Debug\SportEquipment.csproj.CopyComplete
 C:\Users\alex_\Source\Repos\sport_equipment\MagazinSportiv\MagazinSportiv\obj\Debug\MagazinSportiv.exe
 C:\Users\alex_\Source\Repos\sport_equipment\MagazinSportiv\MagazinSportiv\obj\Debug\MagazinSportiv.pdb
+C:\Users\alex_\Source\Repos\sport_equipment\MagazinSportiv\MagazinSportiv\bin\Debug\FilePrinter.dll
+C:\Users\alex_\Source\Repos\sport_equipment\MagazinSportiv\MagazinSportiv\bin\Debug\FilePrinter.pdb

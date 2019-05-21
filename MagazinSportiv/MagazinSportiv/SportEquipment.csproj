@@ -114,6 +114,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\FilePrinter\LibFilePrinter.csproj">
+      <Project>{dd2e05a7-37d3-42ad-a991-e4cda848b496}</Project>
+      <Name>LibFilePrinter</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

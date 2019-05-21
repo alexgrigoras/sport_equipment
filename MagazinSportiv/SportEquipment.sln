@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.28803.352
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SportEquipment", "MagazinSportiv\SportEquipment.csproj", "{4CA3E352-E2F0-4918-BD15-43864DFA5705}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FilePrinter", "FilePrinter\FilePrinter.csproj", "{DD2E05A7-37D3-42AD-A991-E4CDA848B496}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibFilePrinter", "FilePrinter\LibFilePrinter.csproj", "{DD2E05A7-37D3-42AD-A991-E4CDA848B496}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SportEquipmentUnitTest", "SportEquipmentUnitTest\SportEquipmentUnitTest.csproj", "{68B81768-1EE8-492F-BCD5-9F0673D75EB2}"
 EndProject

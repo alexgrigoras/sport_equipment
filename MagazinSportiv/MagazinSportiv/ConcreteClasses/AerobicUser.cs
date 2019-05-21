@@ -15,6 +15,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using LibPrinter;
 
 #endregion
 
@@ -47,6 +48,15 @@ namespace SportEquipment
         public override void PrintTraining()
         {
             // print the training data to file
+            string fileName = "fisier.txt";
+
+            Printer p = new Printer(fileName);
+
+            p.OpenFile();
+
+            p.Write("abc");
+            p.Writeln("def");
+            p.Write("ghi");
         }
 
         #endregion
