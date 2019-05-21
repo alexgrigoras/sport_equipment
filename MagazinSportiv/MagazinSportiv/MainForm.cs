@@ -75,6 +75,10 @@ namespace SportEquipment
             }
 
             List<string> productList = GetDataFromDB(userTypeString, category);
+
+            SetDataToUI(productList);
+
+            // ...
         }
 
         #endregion
@@ -82,16 +86,18 @@ namespace SportEquipment
         #region Private Methods
 
         /// <function>GetDataFromDB</function>
+        /// <param name="userType">The type of the user</param>
+        /// <param name="productType">The type of product</param>
         /// <return>A list of the results</return>
-        /// <summary>Get the data from the MongoDB and display it on interface</summary>
-        private List<string> GetDataFromDB(string category, string type)
+        /// <summary>Get the data from the MongoDB</summary>
+        private List<string> GetDataFromDB(string userType, string productType)
         {
             var client = new MongoClient();
             var db = client.GetDatabase("Proiect");
             var col = db.GetCollection<BsonDocument>("Produs");
 
-            var filter = Builders<BsonDocument>.Filter.Eq("Categorie", category);
-            filter &= (Builders<BsonDocument>.Filter.Eq("Tip_Produs", type));
+            var filter = Builders<BsonDocument>.Filter.Eq("Categorie", userType);
+            filter &= (Builders<BsonDocument>.Filter.Eq("Tip_Produs", productType));
 
             var projectionDefinition = Builders<BsonDocument>.Projection.Include("Nume_Produs").Exclude("_id");
 
@@ -106,6 +112,14 @@ namespace SportEquipment
             });
 
             return listaNoua;
+        }
+
+        /// <function>GetDataFromDB</function>
+        /// <param name="productsList">The list of the products</param>
+        /// <summary>Display data on interface</summary>
+        private void SetDataToUI(List<string> productsList)
+        {
+            // put data on interface
         }
 
         /// <function>CreateTraining</function>
