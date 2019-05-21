@@ -19,6 +19,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MongoDB.Driver;
+using MongoDB.Bson;
 
 #endregion
 
@@ -53,7 +55,7 @@ namespace SportEquipment
 
             user = ValidateLogin(username, password);
 
-            if(user == UserType.InvalidUser)
+            if(user != UserType.InvalidUser)
             {
                 frm = new MainForm(user);
                 frm.Show();
@@ -88,10 +90,40 @@ namespace SportEquipment
             UserType userType = UserType.InvalidUser;
 
             // mongodb access for credentials validation
+            string result = LoginVerification(username, password);
 
+            if (result == "Fitness")
+            {
+                userType = UserType.FitnessUser;
+            }
+            else if (result == "Zumba")
+            {
+                userType = UserType.ZumbaUser;
+            }
+            else if (result == "Aerobic")
+            {
+                userType = UserType.AerobicUser;
+            }
 
             // return the selected user
             return userType;
+        }
+
+        private string LoginVerification(string userName, string password)
+        {
+            var client = new MongoClient();
+            var db = client.GetDatabase("ProiectIP");
+            var col = db.GetCollection<BsonDocument>("Utilizatori");
+
+            var filter = Builders<BsonDocument>.Filter.Eq("Nume_Utilizator", userName);
+            filter &= (Builders<BsonDocument>.Filter.Eq("Parola", password));
+
+            var projectionDefinition = Builders<BsonDocument>.Projection.Include("Tip_Utilizator").Exclude("_id");
+
+            var document = col.Find(filter).Project(projectionDefinition).FirstOrDefault();
+            var value = document.GetElement("Tip_Utilizator").Value.ToString();
+
+            return value;
         }
 
         #endregion

@@ -8,3 +8,15 @@ E:\Facultate\Anul 4\Semestrul II\IP\Proiect\sport_equipment\MagazinSportiv\Magaz
 E:\Facultate\Anul 4\Semestrul II\IP\Proiect\sport_equipment\MagazinSportiv\MagazinSportiv\obj\Debug\SportEquipment.csproj.CoreCompileInputs.cache
 E:\Facultate\Anul 4\Semestrul II\IP\Proiect\sport_equipment\MagazinSportiv\MagazinSportiv\obj\Debug\MagazinSportiv.exe
 E:\Facultate\Anul 4\Semestrul II\IP\Proiect\sport_equipment\MagazinSportiv\MagazinSportiv\obj\Debug\MagazinSportiv.pdb
+E:\Facultate\Anul 4\Semestrul II\IP\Proiect\sport_equipment\MagazinSportiv\MagazinSportiv\bin\Debug\DnsClient.dll
+E:\Facultate\Anul 4\Semestrul II\IP\Proiect\sport_equipment\MagazinSportiv\MagazinSportiv\bin\Debug\MongoDB.Bson.dll
+E:\Facultate\Anul 4\Semestrul II\IP\Proiect\sport_equipment\MagazinSportiv\MagazinSportiv\bin\Debug\MongoDB.Driver.Core.dll
+E:\Facultate\Anul 4\Semestrul II\IP\Proiect\sport_equipment\MagazinSportiv\MagazinSportiv\bin\Debug\MongoDB.Driver.dll
+E:\Facultate\Anul 4\Semestrul II\IP\Proiect\sport_equipment\MagazinSportiv\MagazinSportiv\bin\Debug\System.Buffers.dll
+E:\Facultate\Anul 4\Semestrul II\IP\Proiect\sport_equipment\MagazinSportiv\MagazinSportiv\bin\Debug\DnsClient.xml
+E:\Facultate\Anul 4\Semestrul II\IP\Proiect\sport_equipment\MagazinSportiv\MagazinSportiv\bin\Debug\MongoDB.Bson.xml
+E:\Facultate\Anul 4\Semestrul II\IP\Proiect\sport_equipment\MagazinSportiv\MagazinSportiv\bin\Debug\MongoDB.Driver.xml
+E:\Facultate\Anul 4\Semestrul II\IP\Proiect\sport_equipment\MagazinSportiv\MagazinSportiv\bin\Debug\MongoDB.Driver.Core.xml
+E:\Facultate\Anul 4\Semestrul II\IP\Proiect\sport_equipment\MagazinSportiv\MagazinSportiv\bin\Debug\System.Buffers.xml
+E:\Facultate\Anul 4\Semestrul II\IP\Proiect\sport_equipment\MagazinSportiv\MagazinSportiv\obj\Debug\SportEquipment.MainForm.resources
+E:\Facultate\Anul 4\Semestrul II\IP\Proiect\sport_equipment\MagazinSportiv\MagazinSportiv\obj\Debug\SportEquipment.csproj.CopyComplete

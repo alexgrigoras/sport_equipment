@@ -61,6 +61,7 @@ namespace SportEquipment
         private void GetDataFromDB()
         {
             // get data from mongoDB
+            List<string> trainer;
 
 
             // put data to interface
