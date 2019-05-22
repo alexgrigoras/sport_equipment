@@ -133,15 +133,15 @@ namespace SportEquipment
             // mongodb access for credentials validation
             string result = CheckDBForUser(username, password);
 
-            if (result == "Fitness")
+            if (result == "FitnessUser")
             {
                 userType = UserType.FitnessUser;
             }
-            else if (result == "Zumba")
+            else if (result == "ZumbaUser")
             {
                 userType = UserType.ZumbaUser;
             }
-            else if (result == "Aerobic")
+            else if (result == "AerobicUser")
             {
                 userType = UserType.AerobicUser;
             }
