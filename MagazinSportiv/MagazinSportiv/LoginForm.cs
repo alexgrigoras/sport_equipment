@@ -184,8 +184,8 @@ namespace SportEquipment
         static void CreateUserOnDB(string username, string password, string type)
         {
             var client = new MongoClient();
-            var db = client.GetDatabase("Proiect");
-            var col = db.GetCollection<BsonDocument>("User");
+            var db = client.GetDatabase("ProiectIP");
+            var col = db.GetCollection<BsonDocument>("Utilizatori");
 
             var document = new BsonDocument{
                 { "Nume_Utilizator", username },
