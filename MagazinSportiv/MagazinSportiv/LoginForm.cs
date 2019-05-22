@@ -48,10 +48,12 @@ namespace SportEquipment
         /// <summary>Callback for login button</summary>
         private void ButtonLogin_Click(object sender, EventArgs e)
         {
-            string username = "";
-            string password = "";
+            string username = usernameBox_login.Text;
+            string password = passwordBox_login.Text;
             UserType user;
             MainForm frm;
+
+            SideBar.Text = "";
 
             user = ValidateLogin(username, password);
 
@@ -63,7 +65,8 @@ namespace SportEquipment
             }
             else
             {
-                // meesage box eroare utilizator
+                errorLabel_login.Visible = true;
+                SideBar.Text = "Wrong log in information, please try again.";
             }
         }
 
@@ -74,11 +77,44 @@ namespace SportEquipment
         private void ButtonCreateUser_Click(object sender, EventArgs e)
         {
             // get data from user interface
-            string username = "";
-            string password = "";
-            string type = "";
+            string username = usernameBox_signup.Text;
+            string password = passwordBox_signup.Text;
+            string vpassword = vpasswordBox_signup.Text;
+
+            if(password!=vpassword)
+            {
+                errorLabel_login.Visible = true;
+                errorLabel_login.Text = "Passwords does not match";
+            }
+            else
+            {
+                errorLabel_login.Visible = false;
+            }
+
+            string type = activityTypeBox_signup.Text;
             
             CreateUserOnDB(username, password, type);
+
+            //Hide sign up information
+            backButton_signup.Visible = false;
+            username_signup.Visible = false;
+            usernameBox_signup.Visible = false;
+            password_signup.Visible = false;
+            passwordBox_signup.Visible = false;
+            vpassword_signup.Visible = false;
+            vpasswordBox_signup.Visible = false;
+            activityType_signup.Visible = false;
+            activityTypeBox_signup.Visible = false;
+            buttonCreateUser.Visible = false;
+
+            //Show log in information
+            username_login.Visible = true;
+            usernameBox_login.Visible = true;
+            password_login.Visible = true;
+            passwordBox_login.Visible = true;
+            haveAccount_login.Visible = true;
+            SignUpButton_login.Visible = true;
+            buttonLogin.Visible = true;
         }
 
         #endregion
@@ -160,6 +196,75 @@ namespace SportEquipment
         }
 
         #endregion
+
+        private void SignUpButton_login_Click(object sender, EventArgs e)
+        {
+            //Hide log in information
+            username_login.Visible = false;
+            usernameBox_login.Visible = false;
+            password_login.Visible = false;
+            passwordBox_login.Visible = false;
+            haveAccount_login.Visible = false;
+            SignUpButton_login.Visible = false;
+            buttonLogin.Visible = false;
+
+            //Show sign up information
+            backButton_signup.Visible = true;
+            username_signup.Visible = true;
+            usernameBox_signup.Visible = true;
+            password_signup.Visible = true;
+            passwordBox_signup.Visible = true;
+            vpassword_signup.Visible = true;
+            vpasswordBox_signup.Visible = true;
+            activityType_signup.Visible = true;
+            activityTypeBox_signup.Visible = true;
+            buttonCreateUser.Visible = true;
+        }
+
+        private void LoginForm_Load(object sender, EventArgs e)
+        {
+            //Hide sign up information
+            errorLabel_login.Visible = false;
+            backButton_signup.Visible = false;
+            username_signup.Visible = false;
+            usernameBox_signup.Visible = false;
+            password_signup.Visible = false;
+            passwordBox_signup.Visible = false;
+            vpassword_signup.Visible = false;
+            vpasswordBox_signup.Visible = false;
+            activityType_signup.Visible = false;
+            activityTypeBox_signup.Visible = false;
+            buttonCreateUser.Visible = false;
+        }
+
+        private void BackButton_signup_Click(object sender, EventArgs e)
+        {
+            //Hide sign up information
+            backButton_signup.Visible = false;
+            username_signup.Visible = false;
+            usernameBox_signup.Visible = false;
+            password_signup.Visible = false;
+            passwordBox_signup.Visible = false;
+            vpassword_signup.Visible = false;
+            vpasswordBox_signup.Visible = false;
+            activityType_signup.Visible = false;
+            activityTypeBox_signup.Visible = false;
+            buttonCreateUser.Visible = false;
+
+            //Show log in information
+            username_login.Visible = true;
+            usernameBox_login.Visible = true;
+            password_login.Visible = true;
+            passwordBox_login.Visible = true;
+            haveAccount_login.Visible = true;
+            SignUpButton_login.Visible = true;
+            buttonLogin.Visible = true;
+        }
+
+        private void ExitForm_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 
     /// <enum>UserType</enum>
