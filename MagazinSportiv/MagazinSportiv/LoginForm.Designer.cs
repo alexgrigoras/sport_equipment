@@ -247,7 +247,7 @@
             this.vpasswordBox_signup.BackColor = System.Drawing.Color.White;
             this.vpasswordBox_signup.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.vpasswordBox_signup.Font = new System.Drawing.Font("Tahoma", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.vpasswordBox_signup.Location = new System.Drawing.Point(50, 488);
+            this.vpasswordBox_signup.Location = new System.Drawing.Point(50, 681);
             this.vpasswordBox_signup.Name = "vpasswordBox_signup";
             this.vpasswordBox_signup.Size = new System.Drawing.Size(585, 64);
             this.vpasswordBox_signup.TabIndex = 18;
@@ -260,9 +260,9 @@
             this.SignUpButton_login.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SignUpButton_login.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SignUpButton_login.ForeColor = System.Drawing.Color.DarkOrange;
-            this.SignUpButton_login.Location = new System.Drawing.Point(263, 516);
+            this.SignUpButton_login.Location = new System.Drawing.Point(254, 510);
             this.SignUpButton_login.Name = "SignUpButton_login";
-            this.SignUpButton_login.Size = new System.Drawing.Size(110, 55);
+            this.SignUpButton_login.Size = new System.Drawing.Size(160, 46);
             this.SignUpButton_login.TabIndex = 12;
             this.SignUpButton_login.Text = "Sign up";
             this.SignUpButton_login.UseVisualStyleBackColor = true;
