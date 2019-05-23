@@ -247,7 +247,7 @@
             this.vpasswordBox_signup.BackColor = System.Drawing.Color.White;
             this.vpasswordBox_signup.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.vpasswordBox_signup.Font = new System.Drawing.Font("Tahoma", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.vpasswordBox_signup.Location = new System.Drawing.Point(50, 681);
+            this.vpasswordBox_signup.Location = new System.Drawing.Point(50, 488);
             this.vpasswordBox_signup.Name = "vpasswordBox_signup";
             this.vpasswordBox_signup.Size = new System.Drawing.Size(585, 64);
             this.vpasswordBox_signup.TabIndex = 18;
