@@ -197,6 +197,10 @@ namespace SportEquipment
 
         #endregion
 
+        /// <function>SignUpButton_login_Click</function>
+        /// <param name="sender"></param>
+        /// <param name="EventArgs"></param>
+        /// <summary>Hides Login information and shows Sign up form</summary>
         private void SignUpButton_login_Click(object sender, EventArgs e)
         {
             //Hide log in information
@@ -219,8 +223,16 @@ namespace SportEquipment
             activityType_signup.Visible = true;
             activityTypeBox_signup.Visible = true;
             buttonCreateUser.Visible = true;
+
+            //Move error label
+            errorLabel_login.Left = 52;
+            errorLabel_login.Top = 710;
         }
 
+        /// <function>LoginForm_Load</function>
+        /// <param name="sender"></param>
+        /// <param name="EventArgs"></param>
+        /// <summary>Hides Sign up form when the windows is loaded</summary>
         private void LoginForm_Load(object sender, EventArgs e)
         {
             //Hide sign up information
@@ -237,6 +249,10 @@ namespace SportEquipment
             buttonCreateUser.Visible = false;
         }
 
+        /// <function>BackButton_signup_Click</function>
+        /// <param name="sender"></param>
+        /// <param name="EventArgs"></param>
+        /// <summary>Sends the user back to Login page</summary>
         private void BackButton_signup_Click(object sender, EventArgs e)
         {
             //Hide sign up information
@@ -259,11 +275,58 @@ namespace SportEquipment
             haveAccount_login.Visible = true;
             SignUpButton_login.Visible = true;
             buttonLogin.Visible = true;
+
+            //Move error label
+            errorLabel_login.Left = 261;
+            errorLabel_login.Top = 676;
         }
 
+        /// <function>ExitForm_Click</function>
+        /// <param name="sender"></param>
+        /// <param name="EventArgs"></param>
+        /// <summary>Closes the window</summary>
         private void ExitForm_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        /// <function>HelpButton_Click</function>
+        /// <param name="sender"></param>
+        /// <param name="EventArgs"></param>
+        /// <summary>Opens Help Center</summary>
+        private void HelpButton_Click(object sender, EventArgs e)
+        {
+
+        }
+        // This method will change the square button to a circular button by 
+        // creating a new circle-shaped GraphicsPath object and setting it 
+        // to the RoundButton objects region.
+        private void ButtonLogin_Paint(object sender, System.Windows.Forms.PaintEventArgs e)
+        {
+
+            System.Drawing.Drawing2D.GraphicsPath buttonPath =
+                new System.Drawing.Drawing2D.GraphicsPath();
+
+            // Set a new rectangle to the same size as the button's 
+            // ClientRectangle property.
+            System.Drawing.Rectangle newRectangle = buttonLogin.ClientRectangle;
+
+            // Decrease the size of the rectangle.
+            newRectangle.Inflate(-10, -10);
+
+            // Draw the button's border.
+            e.Graphics.DrawEllipse(System.Drawing.Pens.Black, newRectangle);
+
+            // Increase the size of the rectangle to include the border.
+            newRectangle.Inflate(1, 1);
+
+            // Create a circle within the new rectangle.
+            buttonPath.AddEllipse(newRectangle);
+
+            // Set the button's Region property to the newly created 
+            // circle region.
+            buttonLogin.Region = new System.Drawing.Region(buttonPath);
+
         }
     }
 
