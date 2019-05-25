@@ -36,15 +36,17 @@
             this.username_login = new System.Windows.Forms.Label();
             this.password_login = new System.Windows.Forms.Label();
             this.SideBar = new System.Windows.Forms.Panel();
+            this.mainFormButton = new System.Windows.Forms.Button();
+            this.activityTypecomboBox_signup = new System.Windows.Forms.ComboBox();
+            this.helpButton = new System.Windows.Forms.Button();
             this.backButton_signup = new System.Windows.Forms.Button();
             this.errorLabel_login = new System.Windows.Forms.Label();
+            this.vpasswordBox_signup = new System.Windows.Forms.TextBox();
+            this.vpassword_signup = new System.Windows.Forms.Label();
             this.activityType_signup = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.activityTypeBox_signup = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.vpasswordBox_signup = new System.Windows.Forms.TextBox();
             this.SignUpButton_login = new System.Windows.Forms.Button();
-            this.vpassword_signup = new System.Windows.Forms.Label();
             this.haveAccount_login = new System.Windows.Forms.Label();
             this.password_signup = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -53,7 +55,6 @@
             this.username_signup = new System.Windows.Forms.Label();
             this.GymHive = new System.Windows.Forms.Label();
             this.exitForm = new System.Windows.Forms.Button();
-            this.helpButton = new System.Windows.Forms.Button();
             this.SideBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -141,6 +142,8 @@
             // SideBar
             // 
             this.SideBar.BackColor = System.Drawing.Color.White;
+            this.SideBar.Controls.Add(this.mainFormButton);
+            this.SideBar.Controls.Add(this.activityTypecomboBox_signup);
             this.SideBar.Controls.Add(this.helpButton);
             this.SideBar.Controls.Add(this.backButton_signup);
             this.SideBar.Controls.Add(this.errorLabel_login);
@@ -149,7 +152,6 @@
             this.SideBar.Controls.Add(this.buttonCreateUser);
             this.SideBar.Controls.Add(this.activityType_signup);
             this.SideBar.Controls.Add(this.label1);
-            this.SideBar.Controls.Add(this.activityTypeBox_signup);
             this.SideBar.Controls.Add(this.label8);
             this.SideBar.Controls.Add(this.SignUpButton_login);
             this.SideBar.Controls.Add(this.haveAccount_login);
@@ -169,6 +171,54 @@
             this.SideBar.Name = "SideBar";
             this.SideBar.Size = new System.Drawing.Size(700, 905);
             this.SideBar.TabIndex = 15;
+            // 
+            // mainFormButton
+            // 
+            this.mainFormButton.BackColor = System.Drawing.Color.DarkOrange;
+            this.mainFormButton.FlatAppearance.BorderSize = 0;
+            this.mainFormButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.mainFormButton.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mainFormButton.ForeColor = System.Drawing.Color.White;
+            this.mainFormButton.Location = new System.Drawing.Point(485, 52);
+            this.mainFormButton.Margin = new System.Windows.Forms.Padding(4);
+            this.mainFormButton.Name = "mainFormButton";
+            this.mainFormButton.Size = new System.Drawing.Size(173, 58);
+            this.mainFormButton.TabIndex = 24;
+            this.mainFormButton.Text = "Main Form";
+            this.mainFormButton.UseVisualStyleBackColor = false;
+            this.mainFormButton.Click += new System.EventHandler(this.MainFormButton_Click);
+            // 
+            // activityTypecomboBox_signup
+            // 
+            this.activityTypecomboBox_signup.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.activityTypecomboBox_signup.FormattingEnabled = true;
+            this.activityTypecomboBox_signup.Items.AddRange(new object[] {
+            "Fitness",
+            "Zumba",
+            "Aerobic"});
+            this.activityTypecomboBox_signup.Location = new System.Drawing.Point(50, 590);
+            this.activityTypecomboBox_signup.Name = "activityTypecomboBox_signup";
+            this.activityTypecomboBox_signup.Size = new System.Drawing.Size(585, 59);
+            this.activityTypecomboBox_signup.TabIndex = 23;
+            // 
+            // helpButton
+            // 
+            this.helpButton.BackColor = System.Drawing.Color.Transparent;
+            this.helpButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.helpButton.FlatAppearance.BorderSize = 0;
+            this.helpButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkOrange;
+            this.helpButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.helpButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.helpButton.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.helpButton.ForeColor = System.Drawing.Color.DarkOrange;
+            this.helpButton.Location = new System.Drawing.Point(43, 794);
+            this.helpButton.Name = "helpButton";
+            this.helpButton.Size = new System.Drawing.Size(166, 36);
+            this.helpButton.TabIndex = 18;
+            this.helpButton.Text = "need help?";
+            this.helpButton.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
+            this.helpButton.UseVisualStyleBackColor = false;
+            this.helpButton.Click += new System.EventHandler(this.HelpButton_Click);
             // 
             // backButton_signup
             // 
@@ -199,6 +249,28 @@
             this.errorLabel_login.Text = "Invalid Username";
             this.errorLabel_login.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // vpasswordBox_signup
+            // 
+            this.vpasswordBox_signup.BackColor = System.Drawing.Color.White;
+            this.vpasswordBox_signup.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.vpasswordBox_signup.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.vpasswordBox_signup.Location = new System.Drawing.Point(50, 488);
+            this.vpasswordBox_signup.Name = "vpasswordBox_signup";
+            this.vpasswordBox_signup.Size = new System.Drawing.Size(585, 58);
+            this.vpasswordBox_signup.TabIndex = 18;
+            // 
+            // vpassword_signup
+            // 
+            this.vpassword_signup.AutoSize = true;
+            this.vpassword_signup.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.vpassword_signup.Font = new System.Drawing.Font("Tahoma", 8.142858F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.vpassword_signup.ForeColor = System.Drawing.Color.Gray;
+            this.vpassword_signup.Location = new System.Drawing.Point(52, 461);
+            this.vpassword_signup.Name = "vpassword_signup";
+            this.vpassword_signup.Size = new System.Drawing.Size(149, 24);
+            this.vpassword_signup.TabIndex = 20;
+            this.vpassword_signup.Text = "verify password";
+            // 
             // activityType_signup
             // 
             this.activityType_signup.AutoSize = true;
@@ -219,16 +291,6 @@
             this.label1.Size = new System.Drawing.Size(0, 24);
             this.label1.TabIndex = 14;
             // 
-            // activityTypeBox_signup
-            // 
-            this.activityTypeBox_signup.BackColor = System.Drawing.Color.White;
-            this.activityTypeBox_signup.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.activityTypeBox_signup.Font = new System.Drawing.Font("Tahoma", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.activityTypeBox_signup.Location = new System.Drawing.Point(50, 590);
-            this.activityTypeBox_signup.Name = "activityTypeBox_signup";
-            this.activityTypeBox_signup.Size = new System.Drawing.Size(585, 64);
-            this.activityTypeBox_signup.TabIndex = 19;
-            // 
             // label8
             // 
             this.label8.AutoSize = true;
@@ -237,20 +299,10 @@
             this.label8.ForeColor = System.Drawing.Color.Silver;
             this.label8.Location = new System.Drawing.Point(47, 836);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(574, 51);
+            this.label8.Size = new System.Drawing.Size(585, 51);
             this.label8.TabIndex = 13;
-            this.label8.Text = "Disclaimer: This app is for educational purpose only therefore,we do not own any " +
-    "copyrights.\r\nWe reserve the rights to make any changes.\r\n ";
-            // 
-            // vpasswordBox_signup
-            // 
-            this.vpasswordBox_signup.BackColor = System.Drawing.Color.White;
-            this.vpasswordBox_signup.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.vpasswordBox_signup.Font = new System.Drawing.Font("Tahoma", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.vpasswordBox_signup.Location = new System.Drawing.Point(50, 488);
-            this.vpasswordBox_signup.Name = "vpasswordBox_signup";
-            this.vpasswordBox_signup.Size = new System.Drawing.Size(585, 64);
-            this.vpasswordBox_signup.TabIndex = 18;
+            this.label8.Text = "Disclaimer: This app is for educational purpose only. Therefore, we do not own an" +
+    "y copyrights.\r\nWe reserve the rights to make any changes.\r\n ";
             // 
             // SignUpButton_login
             // 
@@ -267,18 +319,6 @@
             this.SignUpButton_login.Text = "Sign up";
             this.SignUpButton_login.UseVisualStyleBackColor = true;
             this.SignUpButton_login.Click += new System.EventHandler(this.SignUpButton_login_Click);
-            // 
-            // vpassword_signup
-            // 
-            this.vpassword_signup.AutoSize = true;
-            this.vpassword_signup.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.vpassword_signup.Font = new System.Drawing.Font("Tahoma", 8.142858F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.vpassword_signup.ForeColor = System.Drawing.Color.Gray;
-            this.vpassword_signup.Location = new System.Drawing.Point(52, 461);
-            this.vpassword_signup.Name = "vpassword_signup";
-            this.vpassword_signup.Size = new System.Drawing.Size(149, 24);
-            this.vpassword_signup.TabIndex = 20;
-            this.vpassword_signup.Text = "verify password";
             // 
             // haveAccount_login
             // 
@@ -318,20 +358,20 @@
             // 
             this.passwordBox_signup.BackColor = System.Drawing.Color.White;
             this.passwordBox_signup.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.passwordBox_signup.Font = new System.Drawing.Font("Tahoma", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.passwordBox_signup.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.passwordBox_signup.Location = new System.Drawing.Point(50, 384);
             this.passwordBox_signup.Name = "passwordBox_signup";
-            this.passwordBox_signup.Size = new System.Drawing.Size(585, 64);
+            this.passwordBox_signup.Size = new System.Drawing.Size(585, 58);
             this.passwordBox_signup.TabIndex = 15;
             // 
             // usernameBox_signup
             // 
             this.usernameBox_signup.BackColor = System.Drawing.Color.White;
             this.usernameBox_signup.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.usernameBox_signup.Font = new System.Drawing.Font("Tahoma", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.usernameBox_signup.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.usernameBox_signup.Location = new System.Drawing.Point(50, 281);
             this.usernameBox_signup.Name = "usernameBox_signup";
-            this.usernameBox_signup.Size = new System.Drawing.Size(585, 64);
+            this.usernameBox_signup.Size = new System.Drawing.Size(585, 58);
             this.usernameBox_signup.TabIndex = 14;
             // 
             // username_signup
@@ -376,25 +416,6 @@
             this.exitForm.Text = "X";
             this.exitForm.UseVisualStyleBackColor = false;
             this.exitForm.Click += new System.EventHandler(this.ExitForm_Click);
-            // 
-            // helpButton
-            // 
-            this.helpButton.BackColor = System.Drawing.Color.Transparent;
-            this.helpButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.helpButton.FlatAppearance.BorderSize = 0;
-            this.helpButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkOrange;
-            this.helpButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
-            this.helpButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.helpButton.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.helpButton.ForeColor = System.Drawing.Color.DarkOrange;
-            this.helpButton.Location = new System.Drawing.Point(43, 794);
-            this.helpButton.Name = "helpButton";
-            this.helpButton.Size = new System.Drawing.Size(166, 36);
-            this.helpButton.TabIndex = 18;
-            this.helpButton.Text = "need help?";
-            this.helpButton.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.helpButton.UseVisualStyleBackColor = false;
-            this.helpButton.Click += new System.EventHandler(this.HelpButton_Click);
             // 
             // LoginForm
             // 
@@ -444,7 +465,6 @@
         private System.Windows.Forms.Button SignUpButton_login;
         private System.Windows.Forms.Label haveAccount_login;
         private System.Windows.Forms.Label activityType_signup;
-        private System.Windows.Forms.TextBox activityTypeBox_signup;
         private System.Windows.Forms.TextBox vpasswordBox_signup;
         private System.Windows.Forms.Label vpassword_signup;
         private System.Windows.Forms.Label errorLabel_login;
@@ -452,6 +472,8 @@
         private System.Windows.Forms.Button backButton_signup;
         private System.Windows.Forms.Button exitForm;
         private System.Windows.Forms.Button helpButton;
+        private System.Windows.Forms.ComboBox activityTypecomboBox_signup;
+        private System.Windows.Forms.Button mainFormButton;
     }
 }
 

@@ -91,7 +91,7 @@ namespace SportEquipment
                 errorLabel_login.Visible = false;
             }
 
-            string type = activityTypeBox_signup.Text;
+            string type = activityTypecomboBox_signup.Text;
             
             CreateUserOnDB(username, password, type);
 
@@ -104,7 +104,7 @@ namespace SportEquipment
             vpassword_signup.Visible = false;
             vpasswordBox_signup.Visible = false;
             activityType_signup.Visible = false;
-            activityTypeBox_signup.Visible = false;
+            activityTypecomboBox_signup.Visible = false;
             buttonCreateUser.Visible = false;
 
             //Show log in information
@@ -221,7 +221,7 @@ namespace SportEquipment
             vpassword_signup.Visible = true;
             vpasswordBox_signup.Visible = true;
             activityType_signup.Visible = true;
-            activityTypeBox_signup.Visible = true;
+            activityTypecomboBox_signup.Visible = true;
             buttonCreateUser.Visible = true;
 
             //Move error label
@@ -245,7 +245,7 @@ namespace SportEquipment
             vpassword_signup.Visible = false;
             vpasswordBox_signup.Visible = false;
             activityType_signup.Visible = false;
-            activityTypeBox_signup.Visible = false;
+            activityTypecomboBox_signup.Visible = false;
             buttonCreateUser.Visible = false;
         }
 
@@ -264,7 +264,7 @@ namespace SportEquipment
             vpassword_signup.Visible = false;
             vpasswordBox_signup.Visible = false;
             activityType_signup.Visible = false;
-            activityTypeBox_signup.Visible = false;
+            activityTypecomboBox_signup.Visible = false;
             buttonCreateUser.Visible = false;
 
             //Show log in information
@@ -327,6 +327,11 @@ namespace SportEquipment
             // circle region.
             buttonLogin.Region = new System.Drawing.Region(buttonPath);
 
+        }
+
+        private void MainFormButton_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 
