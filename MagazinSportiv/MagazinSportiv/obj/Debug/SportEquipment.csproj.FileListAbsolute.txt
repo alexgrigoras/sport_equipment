@@ -44,3 +44,5 @@ C:\Users\alex_\Source\Repos\sport_equipment\MagazinSportiv\MagazinSportiv\obj\De
 C:\Users\alex_\Source\Repos\sport_equipment\MagazinSportiv\MagazinSportiv\obj\Debug\MagazinSportiv.pdb
 C:\Users\alex_\Source\Repos\sport_equipment\MagazinSportiv\MagazinSportiv\bin\Debug\FilePrinter.dll
 C:\Users\alex_\Source\Repos\sport_equipment\MagazinSportiv\MagazinSportiv\bin\Debug\FilePrinter.pdb
+E:\Facultate\Anul 4\Semestrul II\IP\Proiect\sport_equipment\MagazinSportiv\MagazinSportiv\bin\Debug\FilePrinter.dll
+E:\Facultate\Anul 4\Semestrul II\IP\Proiect\sport_equipment\MagazinSportiv\MagazinSportiv\bin\Debug\FilePrinter.pdb
