@@ -63,7 +63,7 @@ namespace SportEquipment
 
                 if (user != UserType.InvalidUser)
                 {
-                    frm = new MainForm(user);
+                    frm = new MainForm(user, this);
                     frm.Show();
                     this.Hide();
                 }
@@ -292,11 +292,11 @@ namespace SportEquipment
             }
         }
 
-            /// <function>BackButton_signup_Click</function>
-            /// <param name="sender"></param>
-            /// <param name="EventArgs"></param>
-            /// <summary>Sends the user back to Login page</summary>
-            private void BackButton_signup_Click(object sender, EventArgs e)
+        /// <function>BackButton_signup_Click</function>
+        /// <param name="sender"></param>
+        /// <param name="EventArgs"></param>
+        /// <summary>Sends the user back to Login page</summary>
+        private void BackButton_signup_Click(object sender, EventArgs e)
         {
             //Hide sign up information
             backButton_signup.Visible = false;
@@ -339,8 +339,9 @@ namespace SportEquipment
         /// <summary>Opens Help Center</summary>
         private void HelpButton_Click(object sender, EventArgs e)
         {
-
+            System.Diagnostics.Process.Start("Gestionarea_activitatii_fitness.chm");
         }
+
         // This method will change the square button to a circular button by 
         // creating a new circle-shaped GraphicsPath object and setting it 
         // to the RoundButton objects region.
