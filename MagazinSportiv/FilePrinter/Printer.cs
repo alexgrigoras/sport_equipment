@@ -42,9 +42,17 @@ namespace LibPrinter
 
         /// <function>OpenFile</function>
         /// <summary>Open a file or create one</summary>
-        public void OpenFile()
+        public bool OpenFile()
         {
-            _fileWriter = new StreamWriter(_fileName);
+            try
+            {
+                _fileWriter = new StreamWriter(_fileName);
+                return true;
+            }
+            catch (DirectoryNotFoundException ex)
+            {
+                return false;
+            }
         }
 
         /// <function>CloseFile</function>

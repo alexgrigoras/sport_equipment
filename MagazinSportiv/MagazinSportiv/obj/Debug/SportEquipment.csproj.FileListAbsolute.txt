@@ -44,7 +44,31 @@ C:\Users\alex_\Source\Repos\sport_equipment\MagazinSportiv\MagazinSportiv\obj\De
 C:\Users\alex_\Source\Repos\sport_equipment\MagazinSportiv\MagazinSportiv\obj\Debug\MagazinSportiv.pdb
 C:\Users\alex_\Source\Repos\sport_equipment\MagazinSportiv\MagazinSportiv\bin\Debug\FilePrinter.dll
 C:\Users\alex_\Source\Repos\sport_equipment\MagazinSportiv\MagazinSportiv\bin\Debug\FilePrinter.pdb
-E:\Facultate\Anul 4\Semestrul II\IP\Proiect\sport_equipment\MagazinSportiv\MagazinSportiv\bin\Debug\FilePrinter.dll
-E:\Facultate\Anul 4\Semestrul II\IP\Proiect\sport_equipment\MagazinSportiv\MagazinSportiv\bin\Debug\FilePrinter.pdb
-E:\Facultate\Anul 4\Semestrul II\IP\Proiect\sport_equipment\MagazinSportiv\MagazinSportiv\bin\Debug\CircularProgressBar.dll
-E:\Facultate\Anul 4\Semestrul II\IP\Proiect\sport_equipment\MagazinSportiv\MagazinSportiv\bin\Debug\WinFormAnimation.dll
+C:\Users\Ioan\Source\Repos\sport_equipment\MagazinSportiv\MagazinSportiv\bin\Debug\MagazinSportiv.exe.config
+C:\Users\Ioan\Source\Repos\sport_equipment\MagazinSportiv\MagazinSportiv\bin\Debug\MagazinSportiv.exe
+C:\Users\Ioan\Source\Repos\sport_equipment\MagazinSportiv\MagazinSportiv\bin\Debug\MagazinSportiv.pdb
+C:\Users\Ioan\Source\Repos\sport_equipment\MagazinSportiv\MagazinSportiv\bin\Debug\DnsClient.dll
+C:\Users\Ioan\Source\Repos\sport_equipment\MagazinSportiv\MagazinSportiv\bin\Debug\FilePrinter.dll
+C:\Users\Ioan\Source\Repos\sport_equipment\MagazinSportiv\MagazinSportiv\bin\Debug\MongoDB.Bson.dll
+C:\Users\Ioan\Source\Repos\sport_equipment\MagazinSportiv\MagazinSportiv\bin\Debug\MongoDB.Driver.Core.dll
+C:\Users\Ioan\Source\Repos\sport_equipment\MagazinSportiv\MagazinSportiv\bin\Debug\MongoDB.Driver.dll
+C:\Users\Ioan\Source\Repos\sport_equipment\MagazinSportiv\MagazinSportiv\bin\Debug\System.Buffers.dll
+C:\Users\Ioan\Source\Repos\sport_equipment\MagazinSportiv\MagazinSportiv\bin\Debug\FilePrinter.pdb
+C:\Users\Ioan\Source\Repos\sport_equipment\MagazinSportiv\MagazinSportiv\bin\Debug\DnsClient.xml
+C:\Users\Ioan\Source\Repos\sport_equipment\MagazinSportiv\MagazinSportiv\bin\Debug\MongoDB.Bson.xml
+C:\Users\Ioan\Source\Repos\sport_equipment\MagazinSportiv\MagazinSportiv\bin\Debug\MongoDB.Driver.xml
+C:\Users\Ioan\Source\Repos\sport_equipment\MagazinSportiv\MagazinSportiv\bin\Debug\MongoDB.Driver.Core.xml
+C:\Users\Ioan\Source\Repos\sport_equipment\MagazinSportiv\MagazinSportiv\bin\Debug\System.Buffers.xml
+C:\Users\Ioan\Source\Repos\sport_equipment\MagazinSportiv\MagazinSportiv\obj\Debug\SportEquipment.csprojAssemblyReference.cache
+C:\Users\Ioan\Source\Repos\sport_equipment\MagazinSportiv\MagazinSportiv\obj\Debug\SportEquipment.LoginForm.resources
+C:\Users\Ioan\Source\Repos\sport_equipment\MagazinSportiv\MagazinSportiv\obj\Debug\SportEquipment.MainForm.resources
+C:\Users\Ioan\Source\Repos\sport_equipment\MagazinSportiv\MagazinSportiv\obj\Debug\MagazinSportiv.Properties.Resources.resources
+C:\Users\Ioan\Source\Repos\sport_equipment\MagazinSportiv\MagazinSportiv\obj\Debug\SportEquipment.csproj.GenerateResource.cache
+C:\Users\Ioan\Source\Repos\sport_equipment\MagazinSportiv\MagazinSportiv\obj\Debug\SportEquipment.csproj.CoreCompileInputs.cache
+C:\Users\Ioan\Source\Repos\sport_equipment\MagazinSportiv\MagazinSportiv\obj\Debug\SportEquipment.csproj.CopyComplete
+C:\Users\Ioan\Source\Repos\sport_equipment\MagazinSportiv\MagazinSportiv\obj\Debug\MagazinSportiv.exe
+C:\Users\Ioan\Source\Repos\sport_equipment\MagazinSportiv\MagazinSportiv\obj\Debug\MagazinSportiv.pdb
+C:\Users\Ioan\Source\Repos\sport_equipment\MagazinSportiv\MagazinSportiv\bin\Debug\CircularProgressBar.dll
+C:\Users\Ioan\Source\Repos\sport_equipment\MagazinSportiv\MagazinSportiv\bin\Debug\WinFormAnimation.dll
+C:\Users\alex_\Source\Repos\sport_equipment\MagazinSportiv\MagazinSportiv\bin\Debug\CircularProgressBar.dll
+C:\Users\alex_\Source\Repos\sport_equipment\MagazinSportiv\MagazinSportiv\bin\Debug\WinFormAnimation.dll

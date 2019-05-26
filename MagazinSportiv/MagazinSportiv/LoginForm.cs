@@ -48,26 +48,37 @@ namespace SportEquipment
         /// <summary>Callback for login button</summary>
         private void ButtonLogin_Click(object sender, EventArgs e)
         {
-            string username = usernameBox_login.Text;
-            string password = passwordBox_login.Text;
+            string username = "";
+            string password = "";
             UserType user;
             MainForm frm;
 
-            SideBar.Text = "";
+            username = usernameBox_login.Text;
+            password = passwordBox_login.Text;
 
-            user = ValidateLogin(username, password);
-
-            if(user != UserType.InvalidUser)
+            errorLabel_login.Text = "";
+            try
             {
-                frm = new MainForm(user);
-                frm.Show();
-                this.Hide();
+                user = ValidateLogin(username, password);
+
+                if (user != UserType.InvalidUser)
+                {
+                    frm = new MainForm(user, this);
+                    frm.Show();
+                    this.Hide();
+                }
+                else
+                {
+                    errorLabel_login.Visible = true;
+                    errorLabel_login.Text = "Wrong login information, please try again.";
+                }   
             }
-            else
+            catch
             {
                 errorLabel_login.Visible = true;
-                SideBar.Text = "Wrong log in information, please try again.";
+                errorLabel_login.Text = "Wrong login information, please try again.";
             }
+            
         }
 
         /// <function>ButtonCreateUser_Click</function>
@@ -80,16 +91,6 @@ namespace SportEquipment
             string username = usernameBox_signup.Text;
             string password = passwordBox_signup.Text;
             string vpassword = vpasswordBox_signup.Text;
-
-            if(password!=vpassword)
-            {
-                errorLabel_login.Visible = true;
-                errorLabel_login.Text = "Passwords does not match";
-            }
-            else
-            {
-                errorLabel_login.Visible = false;
-            }
 
             string type = activityTypecomboBox_signup.Text;
             
@@ -171,9 +172,17 @@ namespace SportEquipment
             var projectionDefinition = Builders<BsonDocument>.Projection.Include("Tip_Utilizator").Exclude("_id");
 
             var document = col.Find(filter).Project(projectionDefinition).FirstOrDefault();
-            var value = document.GetElement("Tip_Utilizator").Value.ToString();
-
-            return value;
+            try
+            {
+               var value = document.GetElement("Tip_Utilizator").Value.ToString();
+               return value;
+            }
+            catch
+            {
+                errorLabel_login.Visible = true;
+                errorLabel_login.Text = "Wrong login information, please try again.";
+            }
+            return "";
         }
 
         /// <function>CheckDBForUser</function>
@@ -192,7 +201,13 @@ namespace SportEquipment
                 { "Parola", password },
                 { "Tip_Utilizator", type }};
 
-            col.InsertOne(document);
+            try {
+                col.InsertOne(document);
+            }
+            catch
+            {
+
+            }
         }
 
         #endregion
@@ -235,6 +250,11 @@ namespace SportEquipment
         /// <summary>Hides Sign up form when the windows is loaded</summary>
         private void LoginForm_Load(object sender, EventArgs e)
         {
+            Timer timer = new Timer();
+            timer.Interval = (1 * 1000); // 10 secs
+            timer.Tick += new EventHandler(Timer_Tick);
+            timer.Start();
+
             //Hide sign up information
             errorLabel_login.Visible = false;
             backButton_signup.Visible = false;
@@ -247,6 +267,29 @@ namespace SportEquipment
             activityType_signup.Visible = false;
             activityTypecomboBox_signup.Visible = false;
             buttonCreateUser.Visible = false;
+        }
+
+        /// <function>Timer_Tick</function>
+        /// <param name="sender"></param>
+        /// <param name="EventArgs"></param>
+        /// <summary>Every second</summary>
+        private void Timer_Tick(object sender, EventArgs e)
+        {
+            if (passwordBox_signup.Text != vpasswordBox_signup.Text)
+            {
+                Color inactiv = Color.FromName("DimGray");
+                buttonCreateUser.BackColor = inactiv;
+                buttonCreateUser.Enabled = false;
+                errorLabel_login.Visible = true;
+                errorLabel_login.Text = "Passwords does not match";
+            }
+            else
+            {
+                Color activ = Color.FromName("DarkOrange");
+                buttonCreateUser.BackColor = activ;
+                errorLabel_login.Visible = false;
+                buttonCreateUser.Enabled = true;
+            }
         }
 
         /// <function>BackButton_signup_Click</function>
@@ -296,8 +339,9 @@ namespace SportEquipment
         /// <summary>Opens Help Center</summary>
         private void HelpButton_Click(object sender, EventArgs e)
         {
-
+            System.Diagnostics.Process.Start("Gestionarea_activitatii_fitness.chm");
         }
+
         // This method will change the square button to a circular button by 
         // creating a new circle-shaped GraphicsPath object and setting it 
         // to the RoundButton objects region.
@@ -329,10 +373,6 @@ namespace SportEquipment
 
         }
 
-        private void MainFormButton_Click(object sender, EventArgs e)
-        {
-            
-        }
     }
 
     /// <enum>UserType</enum>
