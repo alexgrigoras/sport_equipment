@@ -63,8 +63,9 @@ namespace SportEquipment
 
                 if (user != UserType.InvalidUser)
                 {
-                    frm = new MainForm(user, this);
+                    frm = new MainForm(user, username, this);
                     frm.Show();
+                    passwordBox_login.Text = "";
                     this.Hide();
                 }
                 else
@@ -210,8 +211,6 @@ namespace SportEquipment
             }
         }
 
-        #endregion
-
         /// <function>SignUpButton_login_Click</function>
         /// <param name="sender"></param>
         /// <param name="EventArgs"></param>
@@ -287,7 +286,6 @@ namespace SportEquipment
             {
                 Color activ = Color.FromName("DarkOrange");
                 buttonCreateUser.BackColor = activ;
-                errorLabel_login.Visible = false;
                 buttonCreateUser.Enabled = true;
             }
         }
@@ -370,9 +368,9 @@ namespace SportEquipment
             // Set the button's Region property to the newly created 
             // circle region.
             buttonLogin.Region = new System.Drawing.Region(buttonPath);
-
         }
 
+        #endregion
     }
 
     /// <enum>UserType</enum>

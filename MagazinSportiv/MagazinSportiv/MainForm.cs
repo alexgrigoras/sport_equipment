@@ -46,7 +46,7 @@ namespace SportEquipment
         /// <function>Login</function>
         /// <param name="userType">The type of the user</param>
         /// <summary>Costructor of the class</summary>
-        public MainForm(UserType userType, Form login)
+        public MainForm(UserType userType, String userName, Form login)
         {
             InitializeComponent();
 
@@ -78,6 +78,9 @@ namespace SportEquipment
             {
                 throw new Exception("Tipul utilizatorului este invalid");
             }
+
+            typeLabel.Text = userName;
+            nameLabel.Text = userTypeString;
 
             List<string> productListEquipment = GetDataFromDB(userTypeString, "Equipment");
             List<string> productListFood = GetDataFromDB(userTypeString, "Food");
