@@ -329,10 +329,6 @@ namespace SportEquipment
 
         }
 
-        private void MainFormButton_Click(object sender, EventArgs e)
-        {
-            
-        }
     }
 
     /// <enum>UserType</enum>

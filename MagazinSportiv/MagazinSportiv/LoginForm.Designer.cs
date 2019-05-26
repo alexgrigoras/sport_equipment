@@ -36,7 +36,6 @@
             this.username_login = new System.Windows.Forms.Label();
             this.password_login = new System.Windows.Forms.Label();
             this.SideBar = new System.Windows.Forms.Panel();
-            this.mainFormButton = new System.Windows.Forms.Button();
             this.activityTypecomboBox_signup = new System.Windows.Forms.ComboBox();
             this.helpButton = new System.Windows.Forms.Button();
             this.backButton_signup = new System.Windows.Forms.Button();
@@ -146,7 +145,6 @@
             // SideBar
             // 
             this.SideBar.BackColor = System.Drawing.Color.White;
-            this.SideBar.Controls.Add(this.mainFormButton);
             this.SideBar.Controls.Add(this.activityTypecomboBox_signup);
             this.SideBar.Controls.Add(this.helpButton);
             this.SideBar.Controls.Add(this.backButton_signup);
@@ -176,22 +174,6 @@
             this.SideBar.Name = "SideBar";
             this.SideBar.Size = new System.Drawing.Size(382, 490);
             this.SideBar.TabIndex = 15;
-            // 
-            // mainFormButton
-            // 
-            this.mainFormButton.BackColor = System.Drawing.Color.DarkOrange;
-            this.mainFormButton.FlatAppearance.BorderSize = 0;
-            this.mainFormButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.mainFormButton.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mainFormButton.ForeColor = System.Drawing.Color.White;
-            this.mainFormButton.Location = new System.Drawing.Point(265, 28);
-            this.mainFormButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.mainFormButton.Name = "mainFormButton";
-            this.mainFormButton.Size = new System.Drawing.Size(94, 31);
-            this.mainFormButton.TabIndex = 24;
-            this.mainFormButton.Text = "Main Form";
-            this.mainFormButton.UseVisualStyleBackColor = false;
-            this.mainFormButton.Click += new System.EventHandler(this.MainFormButton_Click);
             // 
             // activityTypecomboBox_signup
             // 
@@ -495,7 +477,6 @@
         private System.Windows.Forms.Button exitForm;
         private System.Windows.Forms.Button helpButton;
         private System.Windows.Forms.ComboBox activityTypecomboBox_signup;
-        private System.Windows.Forms.Button mainFormButton;
     }
 }
 
