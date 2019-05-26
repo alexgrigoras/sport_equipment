@@ -55,9 +55,7 @@ namespace SportEquipment
 
             _activeUser = _userFactory.CreateUser(_userType);
 
-            // de pus in callback la butonul de alegere echipament
-
-            string category = "";   // get data from user interface
+            // add data to comboboxes
 
             string userTypeString = "";
 
@@ -78,9 +76,12 @@ namespace SportEquipment
                 throw new Exception("Tipul utilizatorului este invalid");
             }
 
-            List<string> productList = GetDataFromDB(userTypeString, category);
+            List<string> productListEquipment = GetDataFromDB(userTypeString, "Equipment");
+            List<string> productListFood = GetDataFromDB(userTypeString, "Food");
+            List<string> productListClothes = GetDataFromDB(userTypeString, "Clothes");
+            List<string> productListTrainer = GetDataFromDB(userTypeString, "Trainer");
 
-            SetDataToUI(productList);
+            SetDataToUI(productListEquipment, productListFood, productListClothes, productListTrainer);
 
             // ...
         }
@@ -121,9 +122,28 @@ namespace SportEquipment
         /// <function>GetDataFromDB</function>
         /// <param name="productsList">The list of the products</param>
         /// <summary>Display data on interface</summary>
-        private void SetDataToUI(List<string> productsList)
+        private void SetDataToUI(List<string> Equipment, List<string> Food, List<string> Clothes, List<string> Trainer)
         {
             // put data on interface
+            foreach(string s in Equipment)
+            {
+                equipmentComboBox.Items.Add(s);
+            }
+            // put data on interface
+            foreach (string s in Food)
+            {
+                suplimentsComboBox.Items.Add(s);
+            }
+            // put data on interface
+            foreach (string s in Clothes)
+            {
+                gearComboBox.Items.Add(s);
+            }
+            // put data on interface
+            foreach (string s in Trainer)
+            {
+                trainerComboBox.Items.Add(s);
+            }
         }
 
         /// <function>CreateTraining</function>
@@ -144,9 +164,9 @@ namespace SportEquipment
 
             // create training program 
             _activeUser.SelectTrainer(trainer);
-             _activeUser.SelectFood(food);
-             _activeUser.SelectClothes(clothes);
-             _activeUser.SelectEquipment(equipment);
+            _activeUser.SelectFood(food);
+            _activeUser.SelectClothes(clothes);
+            _activeUser.SelectEquipment(equipment);
 
             // display training program
 
