@@ -367,6 +367,7 @@
             // exportButton
             // 
             this.exportButton.BackColor = System.Drawing.Color.Transparent;
+            this.exportButton.Enabled = false;
             this.exportButton.FlatAppearance.BorderColor = System.Drawing.Color.MediumTurquoise;
             this.exportButton.FlatAppearance.BorderSize = 4;
             this.exportButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;

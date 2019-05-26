@@ -157,6 +157,8 @@ namespace SportEquipment
             string clothes = "";
             string equipment = "";
 
+            //string equipment = equipmentComboBox.Items[equipmentComboBox.SelectedIndex].ToString();
+
             // get the values from text boxes
             trainer = trainerComboBox.Text;
             food = suplimentsComboBox.Text;
@@ -217,7 +219,42 @@ namespace SportEquipment
         /// <summary>Randomizes items in comboBoxes</summary>
         private void RandomizeButton_Click(object sender, EventArgs e)
         {
+            Random random = new Random();
+            int newIndex = -1;
 
+            do
+            {
+                newIndex = random.Next(equipmentComboBox.Items.Count);
+            } while (newIndex == equipmentComboBox.SelectedIndex && equipmentComboBox.Items.Count > 1);
+
+            equipmentComboBox.SelectedIndex = random.Next(equipmentComboBox.Items.Count);
+
+            newIndex = -1;
+
+            do
+            {
+                newIndex = random.Next(suplimentsComboBox.Items.Count);
+            } while (newIndex == suplimentsComboBox.SelectedIndex && suplimentsComboBox.Items.Count > 1);
+
+            suplimentsComboBox.SelectedIndex = random.Next(suplimentsComboBox.Items.Count);
+
+            newIndex = -1;
+
+            do
+            {
+                newIndex = random.Next(gearComboBox.Items.Count);
+            } while (newIndex == gearComboBox.SelectedIndex && gearComboBox.Items.Count > 1);
+
+            gearComboBox.SelectedIndex = random.Next(gearComboBox.Items.Count);
+
+            newIndex = -1;
+
+            do
+            {
+                newIndex = random.Next(trainerComboBox.Items.Count);
+            } while (newIndex == trainerComboBox.SelectedIndex && trainerComboBox.Items.Count > 1);
+
+            trainerComboBox.SelectedIndex = random.Next(trainerComboBox.Items.Count);
         }
 
         /// <function>logoutButton_Click</function>
@@ -237,6 +274,7 @@ namespace SportEquipment
         private void ReadyButton_Click(object sender, EventArgs e)
         {
             CreateTraining();
+            exportButton.Enabled = true;
         }
 
         /// <function>MainForm_Load</function>
@@ -244,9 +282,7 @@ namespace SportEquipment
         /// <param name="EventArgs"></param>
         /// <summary>Updates circular progress bar</summary>
         private void MainForm_Load(object sender, EventArgs e)
-        {
-            
-
+        {         
             Timer timer = new Timer();
             timer.Interval = (1 * 1000); // 10 secs
             timer.Tick += new EventHandler(Timer_Tick);
