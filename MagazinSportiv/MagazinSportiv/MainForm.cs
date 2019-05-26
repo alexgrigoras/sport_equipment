@@ -82,8 +82,6 @@ namespace SportEquipment
             List<string> productListTrainer = GetDataFromDB(userTypeString, "Trainer");
 
             SetDataToUI(productListEquipment, productListFood, productListClothes, productListTrainer);
-
-            // ...
         }
 
         #endregion
@@ -98,8 +96,8 @@ namespace SportEquipment
         private List<string> GetDataFromDB(string userType, string productType)
         {
             var client = new MongoClient();
-            var db = client.GetDatabase("Proiect");
-            var col = db.GetCollection<BsonDocument>("Produs");
+            var db = client.GetDatabase("ProiectIP");
+            var col = db.GetCollection<BsonDocument>("Produse");
 
             var filter = Builders<BsonDocument>.Filter.Eq("Categorie", userType);
             filter &= (Builders<BsonDocument>.Filter.Eq("Tip_Produs", productType));
@@ -127,6 +125,7 @@ namespace SportEquipment
             // put data on interface
             foreach(string s in Equipment)
             {
+                MessageBox.Show(s);
                 equipmentComboBox.Items.Add(s);
             }
             // put data on interface
@@ -189,6 +188,7 @@ namespace SportEquipment
         private void ExitFormButton_Click(object sender, EventArgs e)
         {
             this.Close();
+            System.Environment.Exit(1);
         }
 
         /// <function>ExportButton_Click</function>

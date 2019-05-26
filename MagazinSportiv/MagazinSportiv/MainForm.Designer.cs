@@ -73,14 +73,10 @@
             // 
             this.trainerComboBox.Font = new System.Drawing.Font("Tahoma", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.trainerComboBox.FormattingEnabled = true;
-            this.trainerComboBox.Items.AddRange(new object[] {
-            "x",
-            "y",
-            "z"});
-            this.trainerComboBox.Location = new System.Drawing.Point(35, 659);
-            this.trainerComboBox.Margin = new System.Windows.Forms.Padding(4);
+            this.trainerComboBox.Location = new System.Drawing.Point(20, 377);
+            this.trainerComboBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.trainerComboBox.Name = "trainerComboBox";
-            this.trainerComboBox.Size = new System.Drawing.Size(448, 59);
+            this.trainerComboBox.Size = new System.Drawing.Size(258, 37);
             this.trainerComboBox.TabIndex = 0;
             // 
             // panel1
@@ -92,8 +88,9 @@
             this.panel1.Controls.Add(this.usernameLabel);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1766, 76);
+            this.panel1.Size = new System.Drawing.Size(1009, 43);
             this.panel1.TabIndex = 6;
             // 
             // label16
@@ -101,9 +98,10 @@
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Tahoma", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label16.Location = new System.Drawing.Point(69, 18);
+            this.label16.Location = new System.Drawing.Point(39, 10);
+            this.label16.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(353, 42);
+            this.label16.Size = new System.Drawing.Size(203, 24);
             this.label16.TabIndex = 11;
             this.label16.Text = "Fitness randomizer";
             // 
@@ -115,9 +113,10 @@
             this.logoutButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.logoutButton.Font = new System.Drawing.Font("Tahoma", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.logoutButton.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.logoutButton.Location = new System.Drawing.Point(1546, 9);
+            this.logoutButton.Location = new System.Drawing.Point(883, 5);
+            this.logoutButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.logoutButton.Name = "logoutButton";
-            this.logoutButton.Size = new System.Drawing.Size(148, 58);
+            this.logoutButton.Size = new System.Drawing.Size(85, 33);
             this.logoutButton.TabIndex = 3;
             this.logoutButton.Text = "log out";
             this.logoutButton.UseVisualStyleBackColor = false;
@@ -127,9 +126,10 @@
             this.exitFormButton.AutoSize = true;
             this.exitFormButton.Font = new System.Drawing.Font("Tahoma", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.exitFormButton.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.exitFormButton.Location = new System.Drawing.Point(1700, 9);
+            this.exitFormButton.Location = new System.Drawing.Point(971, 5);
+            this.exitFormButton.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.exitFormButton.Name = "exitFormButton";
-            this.exitFormButton.Size = new System.Drawing.Size(51, 51);
+            this.exitFormButton.Size = new System.Drawing.Size(29, 29);
             this.exitFormButton.TabIndex = 10;
             this.exitFormButton.Text = "X";
             this.exitFormButton.Click += new System.EventHandler(this.ExitFormButton_Click);
@@ -138,9 +138,10 @@
             // 
             this.usernameLabel.Font = new System.Drawing.Font("Tahoma", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.usernameLabel.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.usernameLabel.Location = new System.Drawing.Point(1332, 18);
+            this.usernameLabel.Location = new System.Drawing.Point(761, 10);
+            this.usernameLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.usernameLabel.Name = "usernameLabel";
-            this.usernameLabel.Size = new System.Drawing.Size(195, 42);
+            this.usernameLabel.Size = new System.Drawing.Size(111, 24);
             this.usernameLabel.TabIndex = 9;
             this.usernameLabel.Text = "John";
             this.usernameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -152,9 +153,10 @@
             this.panel2.Controls.Add(this.trainerLabel);
             this.panel2.Controls.Add(this.trainerComboBox);
             this.panel2.Controls.Add(this.pictureBox1);
-            this.panel2.Location = new System.Drawing.Point(1186, 108);
+            this.panel2.Location = new System.Drawing.Point(678, 62);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(528, 742);
+            this.panel2.Size = new System.Drawing.Size(302, 424);
             this.panel2.TabIndex = 7;
             // 
             // label1
@@ -162,9 +164,10 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Tahoma", 21.85714F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label1.Location = new System.Drawing.Point(3, 52);
+            this.label1.Location = new System.Drawing.Point(2, 30);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(211, 62);
+            this.label1.Size = new System.Drawing.Size(123, 36);
             this.label1.TabIndex = 2;
             this.label1.Text = "Trainer";
             // 
@@ -173,18 +176,20 @@
             this.trainerLabel.AutoSize = true;
             this.trainerLabel.Font = new System.Drawing.Font("Tahoma", 15.85714F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.trainerLabel.ForeColor = System.Drawing.Color.DimGray;
-            this.trainerLabel.Location = new System.Drawing.Point(27, 6);
+            this.trainerLabel.Location = new System.Drawing.Point(15, 3);
+            this.trainerLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.trainerLabel.Name = "trainerLabel";
-            this.trainerLabel.Size = new System.Drawing.Size(246, 45);
+            this.trainerLabel.Size = new System.Drawing.Size(147, 27);
             this.trainerLabel.TabIndex = 1;
             this.trainerLabel.Text = "choose your";
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(35, 112);
+            this.pictureBox1.Location = new System.Drawing.Point(20, 64);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(448, 530);
+            this.pictureBox1.Size = new System.Drawing.Size(256, 303);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
@@ -194,9 +199,10 @@
             this.panel3.Controls.Add(this.suplimentsComboBox);
             this.panel3.Controls.Add(this.label2);
             this.panel3.Controls.Add(this.label3);
-            this.panel3.Location = new System.Drawing.Point(62, 112);
+            this.panel3.Location = new System.Drawing.Point(35, 64);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(394, 242);
+            this.panel3.Size = new System.Drawing.Size(225, 138);
             this.panel3.TabIndex = 8;
             // 
             // suplimentsComboBox
@@ -204,14 +210,10 @@
             this.suplimentsComboBox.BackColor = System.Drawing.Color.White;
             this.suplimentsComboBox.Font = new System.Drawing.Font("Tahoma", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.suplimentsComboBox.FormattingEnabled = true;
-            this.suplimentsComboBox.Items.AddRange(new object[] {
-            "x",
-            "y",
-            "z"});
-            this.suplimentsComboBox.Location = new System.Drawing.Point(15, 162);
-            this.suplimentsComboBox.Margin = new System.Windows.Forms.Padding(4);
+            this.suplimentsComboBox.Location = new System.Drawing.Point(9, 93);
+            this.suplimentsComboBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.suplimentsComboBox.Name = "suplimentsComboBox";
-            this.suplimentsComboBox.Size = new System.Drawing.Size(361, 59);
+            this.suplimentsComboBox.Size = new System.Drawing.Size(208, 37);
             this.suplimentsComboBox.TabIndex = 3;
             // 
             // label2
@@ -219,9 +221,10 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Tahoma", 21.85714F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label2.Location = new System.Drawing.Point(4, 46);
+            this.label2.Location = new System.Drawing.Point(2, 26);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(313, 62);
+            this.label2.Size = new System.Drawing.Size(183, 36);
             this.label2.TabIndex = 4;
             this.label2.Text = "Supliments";
             // 
@@ -230,9 +233,10 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Tahoma", 15.85714F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.DimGray;
-            this.label3.Location = new System.Drawing.Point(23, 3);
+            this.label3.Location = new System.Drawing.Point(13, 2);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(285, 45);
+            this.label3.Size = new System.Drawing.Size(171, 27);
             this.label3.TabIndex = 3;
             this.label3.Text = "recommended";
             // 
@@ -242,23 +246,20 @@
             this.panel4.Controls.Add(this.equipmentComboBox);
             this.panel4.Controls.Add(this.label5);
             this.panel4.Controls.Add(this.label4);
-            this.panel4.Location = new System.Drawing.Point(62, 360);
+            this.panel4.Location = new System.Drawing.Point(35, 206);
+            this.panel4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(397, 242);
+            this.panel4.Size = new System.Drawing.Size(227, 138);
             this.panel4.TabIndex = 9;
             // 
             // equipmentComboBox
             // 
             this.equipmentComboBox.Font = new System.Drawing.Font("Tahoma", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.equipmentComboBox.FormattingEnabled = true;
-            this.equipmentComboBox.Items.AddRange(new object[] {
-            "x",
-            "y",
-            "z"});
-            this.equipmentComboBox.Location = new System.Drawing.Point(19, 162);
-            this.equipmentComboBox.Margin = new System.Windows.Forms.Padding(4);
+            this.equipmentComboBox.Location = new System.Drawing.Point(11, 93);
+            this.equipmentComboBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.equipmentComboBox.Name = "equipmentComboBox";
-            this.equipmentComboBox.Size = new System.Drawing.Size(361, 59);
+            this.equipmentComboBox.Size = new System.Drawing.Size(208, 37);
             this.equipmentComboBox.TabIndex = 6;
             // 
             // label5
@@ -266,9 +267,10 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Tahoma", 15.85714F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.DimGray;
-            this.label5.Location = new System.Drawing.Point(28, 3);
+            this.label5.Location = new System.Drawing.Point(16, 2);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(175, 45);
+            this.label5.Size = new System.Drawing.Size(105, 27);
             this.label5.TabIndex = 7;
             this.label5.Text = "get your";
             // 
@@ -277,9 +279,10 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Tahoma", 21.85714F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label4.Location = new System.Drawing.Point(8, 46);
+            this.label4.Location = new System.Drawing.Point(5, 26);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(303, 62);
+            this.label4.Size = new System.Drawing.Size(177, 36);
             this.label4.TabIndex = 8;
             this.label4.Text = "Equipment";
             // 
@@ -287,14 +290,10 @@
             // 
             this.gearComboBox.Font = new System.Drawing.Font("Tahoma", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gearComboBox.FormattingEnabled = true;
-            this.gearComboBox.Items.AddRange(new object[] {
-            "x",
-            "y",
-            "z"});
-            this.gearComboBox.Location = new System.Drawing.Point(18, 162);
-            this.gearComboBox.Margin = new System.Windows.Forms.Padding(4);
+            this.gearComboBox.Location = new System.Drawing.Point(10, 93);
+            this.gearComboBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.gearComboBox.Name = "gearComboBox";
-            this.gearComboBox.Size = new System.Drawing.Size(361, 59);
+            this.gearComboBox.Size = new System.Drawing.Size(208, 37);
             this.gearComboBox.TabIndex = 6;
             // 
             // label6
@@ -302,9 +301,10 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Tahoma", 15.85714F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.DimGray;
-            this.label6.Location = new System.Drawing.Point(28, 3);
+            this.label6.Location = new System.Drawing.Point(16, 2);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(130, 45);
+            this.label6.Size = new System.Drawing.Size(78, 27);
             this.label6.TabIndex = 7;
             this.label6.Text = "try on";
             // 
@@ -313,9 +313,10 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Tahoma", 21.85714F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label7.Location = new System.Drawing.Point(3, 49);
+            this.label7.Location = new System.Drawing.Point(2, 28);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(344, 62);
+            this.label7.Size = new System.Drawing.Size(200, 36);
             this.label7.TabIndex = 8;
             this.label7.Text = "Fitness Gear";
             // 
@@ -325,9 +326,10 @@
             this.panel6.Controls.Add(this.label6);
             this.panel6.Controls.Add(this.gearComboBox);
             this.panel6.Controls.Add(this.label7);
-            this.panel6.Location = new System.Drawing.Point(62, 608);
+            this.panel6.Location = new System.Drawing.Point(35, 347);
+            this.panel6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(397, 242);
+            this.panel6.Size = new System.Drawing.Size(227, 138);
             this.panel6.TabIndex = 10;
             // 
             // panel5
@@ -338,9 +340,10 @@
             this.panel5.Controls.Add(this.randomizeButton);
             this.panel5.Controls.Add(this.label15);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel5.Location = new System.Drawing.Point(0, 857);
+            this.panel5.Location = new System.Drawing.Point(0, 489);
+            this.panel5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(1766, 143);
+            this.panel5.Size = new System.Drawing.Size(1009, 82);
             this.panel5.TabIndex = 11;
             // 
             // helpButton
@@ -351,9 +354,10 @@
             this.helpButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.helpButton.Font = new System.Drawing.Font("Tahoma", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.helpButton.ForeColor = System.Drawing.Color.Gainsboro;
-            this.helpButton.Location = new System.Drawing.Point(503, 37);
+            this.helpButton.Location = new System.Drawing.Point(287, 21);
+            this.helpButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.helpButton.Name = "helpButton";
-            this.helpButton.Size = new System.Drawing.Size(361, 70);
+            this.helpButton.Size = new System.Drawing.Size(206, 40);
             this.helpButton.TabIndex = 2;
             this.helpButton.Text = "Need Help?";
             this.helpButton.UseVisualStyleBackColor = false;
@@ -367,9 +371,10 @@
             this.exportButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.exportButton.Font = new System.Drawing.Font("Tahoma", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.exportButton.ForeColor = System.Drawing.Color.MediumTurquoise;
-            this.exportButton.Location = new System.Drawing.Point(1221, 37);
+            this.exportButton.Location = new System.Drawing.Point(698, 21);
+            this.exportButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.exportButton.Name = "exportButton";
-            this.exportButton.Size = new System.Drawing.Size(448, 70);
+            this.exportButton.Size = new System.Drawing.Size(256, 40);
             this.exportButton.TabIndex = 1;
             this.exportButton.Text = "Export Workout";
             this.exportButton.UseVisualStyleBackColor = false;
@@ -383,9 +388,10 @@
             this.randomizeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.randomizeButton.Font = new System.Drawing.Font("Tahoma", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.randomizeButton.ForeColor = System.Drawing.Color.LightPink;
-            this.randomizeButton.Location = new System.Drawing.Point(80, 37);
+            this.randomizeButton.Location = new System.Drawing.Point(46, 21);
+            this.randomizeButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.randomizeButton.Name = "randomizeButton";
-            this.randomizeButton.Size = new System.Drawing.Size(361, 70);
+            this.randomizeButton.Size = new System.Drawing.Size(206, 40);
             this.randomizeButton.TabIndex = 0;
             this.randomizeButton.Text = "Randomize";
             this.randomizeButton.UseVisualStyleBackColor = false;
@@ -396,9 +402,10 @@
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Tahoma", 7F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.Color.Silver;
-            this.label15.Location = new System.Drawing.Point(8, 116);
+            this.label15.Location = new System.Drawing.Point(5, 66);
+            this.label15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(1044, 42);
+            this.label15.Size = new System.Drawing.Size(636, 24);
             this.label15.TabIndex = 3;
             this.label15.Text = "Disclaimer: This app is for educational purpose only. Therefore, we do not own an" +
     "y copyrights. We reserve the rights to make any changes.\r\n \r\n";
@@ -409,9 +416,10 @@
             this.quoteLabel.BackColor = System.Drawing.Color.Transparent;
             this.quoteLabel.Font = new System.Drawing.Font("Tahoma", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.quoteLabel.ForeColor = System.Drawing.Color.LightCyan;
-            this.quoteLabel.Location = new System.Drawing.Point(631, 90);
+            this.quoteLabel.Location = new System.Drawing.Point(361, 51);
+            this.quoteLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.quoteLabel.Name = "quoteLabel";
-            this.quoteLabel.Size = new System.Drawing.Size(247, 204);
+            this.quoteLabel.Size = new System.Drawing.Size(140, 116);
             this.quoteLabel.TabIndex = 9;
             this.quoteLabel.Text = "be\r\nthe best\r\nversion\r\nof yourself";
             this.quoteLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -421,9 +429,10 @@
             this.progressLabel.BackColor = System.Drawing.Color.Transparent;
             this.progressLabel.Font = new System.Drawing.Font("Tahoma", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.progressLabel.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.progressLabel.Location = new System.Drawing.Point(740, 555);
+            this.progressLabel.Location = new System.Drawing.Point(423, 317);
+            this.progressLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.progressLabel.Name = "progressLabel";
-            this.progressLabel.Size = new System.Drawing.Size(85, 57);
+            this.progressLabel.Size = new System.Drawing.Size(49, 33);
             this.progressLabel.TabIndex = 15;
             this.progressLabel.Text = "67";
             this.progressLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -438,7 +447,8 @@
             this.circularProgressBar.InnerColor = System.Drawing.Color.Transparent;
             this.circularProgressBar.InnerMargin = 3;
             this.circularProgressBar.InnerWidth = -1;
-            this.circularProgressBar.Location = new System.Drawing.Point(719, 517);
+            this.circularProgressBar.Location = new System.Drawing.Point(411, 295);
+            this.circularProgressBar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.circularProgressBar.MarqueeAnimationSpeed = 2000;
             this.circularProgressBar.Name = "circularProgressBar";
             this.circularProgressBar.OuterColor = System.Drawing.Color.Pink;
@@ -448,7 +458,7 @@
             this.circularProgressBar.ProgressWidth = 4;
             this.circularProgressBar.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.circularProgressBar.SecondaryFont = new System.Drawing.Font("Microsoft Sans Serif", 20F);
-            this.circularProgressBar.Size = new System.Drawing.Size(132, 132);
+            this.circularProgressBar.Size = new System.Drawing.Size(75, 75);
             this.circularProgressBar.StartAngle = 270;
             this.circularProgressBar.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
             this.circularProgressBar.SubscriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
@@ -469,9 +479,10 @@
             this.readyButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.readyButton.Font = new System.Drawing.Font("Tahoma", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.readyButton.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.readyButton.Location = new System.Drawing.Point(503, 770);
+            this.readyButton.Location = new System.Drawing.Point(287, 440);
+            this.readyButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.readyButton.Name = "readyButton";
-            this.readyButton.Size = new System.Drawing.Size(361, 70);
+            this.readyButton.Size = new System.Drawing.Size(206, 40);
             this.readyButton.TabIndex = 4;
             this.readyButton.Text = "Ready";
             this.readyButton.UseVisualStyleBackColor = false;
@@ -479,13 +490,13 @@
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(168F, 168F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1766, 1000);
+            this.ClientSize = new System.Drawing.Size(1009, 571);
             this.Controls.Add(this.readyButton);
             this.Controls.Add(this.progressLabel);
             this.Controls.Add(this.quoteLabel);
@@ -498,9 +509,9 @@
             this.Controls.Add(this.circularProgressBar);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4);
-            this.MaximumSize = new System.Drawing.Size(1766, 1000);
-            this.MinimumSize = new System.Drawing.Size(1766, 1000);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.MaximumSize = new System.Drawing.Size(1009, 571);
+            this.MinimumSize = new System.Drawing.Size(1009, 571);
             this.Name = "MainForm";
             this.Text = "MainForm";
             this.WindowState = System.Windows.Forms.FormWindowState.Minimized;
