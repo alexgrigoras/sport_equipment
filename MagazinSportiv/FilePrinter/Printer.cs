@@ -49,7 +49,7 @@ namespace LibPrinter
                 _fileWriter = new StreamWriter(_fileName);
                 return true;
             }
-            catch (DirectoryNotFoundException ex)
+            catch (DirectoryNotFoundException)
             {
                 return false;
             }
