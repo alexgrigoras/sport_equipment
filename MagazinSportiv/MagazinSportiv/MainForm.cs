@@ -163,7 +163,7 @@ namespace SportEquipment
             trainer = trainerComboBox.Text;
             food = suplimentsComboBox.Text;
             clothes = gearComboBox.Text;
-            equipment = suplimentsComboBox.Text;
+            equipment = equipmentComboBox.Text;
 
             // create training program
             _activeUser.SelectTrainer(trainer);
@@ -173,7 +173,7 @@ namespace SportEquipment
 
             // display training program
             MessageBox.Show("Selected training: " +
-                trainer + " " + food + " " + clothes + " " + equipment);
+                trainer + " - " + food + " - " + clothes + " - " + equipment);
         }
 
         /// <function>SaveTraining</function>
@@ -181,7 +181,14 @@ namespace SportEquipment
         private void SaveTraining()
         {
             // print training program
-            _activeUser.PrintTraining();
+            try
+            {
+                _activeUser.PrintTraining();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         #endregion
