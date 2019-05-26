@@ -120,6 +120,7 @@
             this.logoutButton.TabIndex = 3;
             this.logoutButton.Text = "log out";
             this.logoutButton.UseVisualStyleBackColor = false;
+            this.logoutButton.Click += new System.EventHandler(this.logoutButton_Click);
             // 
             // exitFormButton
             // 
@@ -514,7 +515,6 @@
             this.MinimumSize = new System.Drawing.Size(1009, 571);
             this.Name = "MainForm";
             this.Text = "MainForm";
-            this.WindowState = System.Windows.Forms.FormWindowState.Minimized;
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

@@ -19,3 +19,6 @@ C:\Users\Ioan\Source\Repos\sport_equipment\MagazinSportiv\FilePrinter\obj\Debug\
 C:\Users\Ioan\Source\Repos\sport_equipment\MagazinSportiv\FilePrinter\bin\Debug\CircularProgressBar.dll
 C:\Users\Ioan\Source\Repos\sport_equipment\MagazinSportiv\FilePrinter\bin\Debug\WinFormAnimation.dll
 C:\Users\Ioan\Source\Repos\sport_equipment\MagazinSportiv\FilePrinter\obj\Debug\LibFilePrinter.csproj.CopyComplete
+C:\Users\alex_\Source\Repos\sport_equipment\MagazinSportiv\FilePrinter\bin\Debug\CircularProgressBar.dll
+C:\Users\alex_\Source\Repos\sport_equipment\MagazinSportiv\FilePrinter\bin\Debug\WinFormAnimation.dll
+C:\Users\alex_\Source\Repos\sport_equipment\MagazinSportiv\FilePrinter\obj\Debug\LibFilePrinter.csproj.CopyComplete

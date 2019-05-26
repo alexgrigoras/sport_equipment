@@ -59,7 +59,7 @@ namespace SportEquipment
 
             if(user != UserType.InvalidUser)
             {
-                frm = new MainForm(user);
+                frm = new MainForm(user, this);
                 frm.Show();
                 this.Hide();
             }

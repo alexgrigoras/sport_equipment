@@ -70,3 +70,5 @@ C:\Users\Ioan\Source\Repos\sport_equipment\MagazinSportiv\MagazinSportiv\obj\Deb
 C:\Users\Ioan\Source\Repos\sport_equipment\MagazinSportiv\MagazinSportiv\obj\Debug\MagazinSportiv.pdb
 C:\Users\Ioan\Source\Repos\sport_equipment\MagazinSportiv\MagazinSportiv\bin\Debug\CircularProgressBar.dll
 C:\Users\Ioan\Source\Repos\sport_equipment\MagazinSportiv\MagazinSportiv\bin\Debug\WinFormAnimation.dll
+C:\Users\alex_\Source\Repos\sport_equipment\MagazinSportiv\MagazinSportiv\bin\Debug\CircularProgressBar.dll
+C:\Users\alex_\Source\Repos\sport_equipment\MagazinSportiv\MagazinSportiv\bin\Debug\WinFormAnimation.dll

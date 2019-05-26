@@ -12,3 +12,5 @@ C:\Users\alex_\Source\Repos\sport_equipment\MagazinSportiv\SportEquipmentUnitTes
 C:\Users\alex_\Source\Repos\sport_equipment\MagazinSportiv\SportEquipmentUnitTest\obj\Debug\SportEquipmentUnitTest.csproj.CopyComplete
 C:\Users\alex_\Source\Repos\sport_equipment\MagazinSportiv\SportEquipmentUnitTest\obj\Debug\SportEquipmentUnitTest.dll
 C:\Users\alex_\Source\Repos\sport_equipment\MagazinSportiv\SportEquipmentUnitTest\obj\Debug\SportEquipmentUnitTest.pdb
+C:\Users\alex_\Source\Repos\sport_equipment\MagazinSportiv\SportEquipmentUnitTest\bin\Debug\CircularProgressBar.dll
+C:\Users\alex_\Source\Repos\sport_equipment\MagazinSportiv\SportEquipmentUnitTest\bin\Debug\WinFormAnimation.dll

@@ -34,6 +34,7 @@ namespace SportEquipment
         private UserFactory _userFactory;
         private User _activeUser;
         private int progress1, progress2, progress3, progress4;
+        private Form _login;
 
         #endregion
         public MainForm()
@@ -45,7 +46,7 @@ namespace SportEquipment
         /// <function>Login</function>
         /// <param name="userType">The type of the user</param>
         /// <summary>Costructor of the class</summary>
-        public MainForm(UserType userType)
+        public MainForm(UserType userType, Form login)
         {
             InitializeComponent();
 
@@ -54,6 +55,8 @@ namespace SportEquipment
             _userFactory = new UserFactory();
 
             _activeUser = _userFactory.CreateUser(_userType);
+
+            _login = login;
 
             // add data to comboboxes
 
@@ -125,7 +128,6 @@ namespace SportEquipment
             // put data on interface
             foreach(string s in Equipment)
             {
-                MessageBox.Show(s);
                 equipmentComboBox.Items.Add(s);
             }
             // put data on interface
@@ -216,6 +218,16 @@ namespace SportEquipment
         private void RandomizeButton_Click(object sender, EventArgs e)
         {
 
+        }
+
+        /// <function>logoutButton_Click</function>
+        /// <param name="sender"></param>
+        /// <param name="EventArgs"></param>
+        /// <summary>Logs out to login screen</summary>
+        private void logoutButton_Click(object sender, EventArgs e)
+        {
+            _login.Show();
+            this.Close();
         }
 
         /// <function>ReadyButton_Click</function>
