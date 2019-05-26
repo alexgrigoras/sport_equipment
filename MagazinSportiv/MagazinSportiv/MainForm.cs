@@ -160,8 +160,6 @@ namespace SportEquipment
             string clothes = "";
             string equipment = "";
 
-            //string equipment = equipmentComboBox.Items[equipmentComboBox.SelectedIndex].ToString();
-
             // get the values from text boxes
             trainer = trainerComboBox.Text;
             food = suplimentsComboBox.Text;
