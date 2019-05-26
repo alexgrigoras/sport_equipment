@@ -71,8 +71,9 @@
             // 
             // trainerComboBox
             // 
+            this.trainerComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.trainerComboBox.Font = new System.Drawing.Font("Tahoma", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.trainerComboBox.ForeColor = System.Drawing.Color.MediumTurquoise;
+            this.trainerComboBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(160)))), ((int)(((byte)(113)))));
             this.trainerComboBox.FormattingEnabled = true;
             this.trainerComboBox.Location = new System.Drawing.Point(25, 471);
             this.trainerComboBox.Margin = new System.Windows.Forms.Padding(2);
@@ -208,8 +209,9 @@
             // suplimentsComboBox
             // 
             this.suplimentsComboBox.BackColor = System.Drawing.Color.White;
+            this.suplimentsComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.suplimentsComboBox.Font = new System.Drawing.Font("Tahoma", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.suplimentsComboBox.ForeColor = System.Drawing.Color.LightPink;
+            this.suplimentsComboBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(160)))), ((int)(((byte)(113)))));
             this.suplimentsComboBox.FormattingEnabled = true;
             this.suplimentsComboBox.Location = new System.Drawing.Point(11, 116);
             this.suplimentsComboBox.Margin = new System.Windows.Forms.Padding(2);
@@ -255,8 +257,9 @@
             // 
             // equipmentComboBox
             // 
+            this.equipmentComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.equipmentComboBox.Font = new System.Drawing.Font("Tahoma", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.equipmentComboBox.ForeColor = System.Drawing.Color.LightPink;
+            this.equipmentComboBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(160)))), ((int)(((byte)(113)))));
             this.equipmentComboBox.FormattingEnabled = true;
             this.equipmentComboBox.Location = new System.Drawing.Point(14, 116);
             this.equipmentComboBox.Margin = new System.Windows.Forms.Padding(2);
@@ -290,8 +293,9 @@
             // 
             // gearComboBox
             // 
+            this.gearComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.gearComboBox.Font = new System.Drawing.Font("Tahoma", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gearComboBox.ForeColor = System.Drawing.Color.LightPink;
+            this.gearComboBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(160)))), ((int)(((byte)(113)))));
             this.gearComboBox.FormattingEnabled = true;
             this.gearComboBox.Location = new System.Drawing.Point(12, 116);
             this.gearComboBox.Margin = new System.Windows.Forms.Padding(2);
@@ -370,11 +374,11 @@
             // 
             this.exportButton.BackColor = System.Drawing.Color.Transparent;
             this.exportButton.Enabled = false;
-            this.exportButton.FlatAppearance.BorderColor = System.Drawing.Color.MediumTurquoise;
+            this.exportButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(135)))), ((int)(((byte)(226)))), ((int)(((byte)(203)))));
             this.exportButton.FlatAppearance.BorderSize = 4;
             this.exportButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.exportButton.Font = new System.Drawing.Font("Tahoma", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.exportButton.ForeColor = System.Drawing.Color.MediumTurquoise;
+            this.exportButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(135)))), ((int)(((byte)(226)))), ((int)(((byte)(203)))));
             this.exportButton.Location = new System.Drawing.Point(872, 26);
             this.exportButton.Margin = new System.Windows.Forms.Padding(2);
             this.exportButton.Name = "exportButton";
@@ -387,11 +391,11 @@
             // randomizeButton
             // 
             this.randomizeButton.BackColor = System.Drawing.Color.Transparent;
-            this.randomizeButton.FlatAppearance.BorderColor = System.Drawing.Color.LightPink;
+            this.randomizeButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(160)))), ((int)(((byte)(113)))));
             this.randomizeButton.FlatAppearance.BorderSize = 4;
             this.randomizeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.randomizeButton.Font = new System.Drawing.Font("Tahoma", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.randomizeButton.ForeColor = System.Drawing.Color.LightPink;
+            this.randomizeButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(160)))), ((int)(((byte)(113)))));
             this.randomizeButton.Location = new System.Drawing.Point(58, 26);
             this.randomizeButton.Margin = new System.Windows.Forms.Padding(2);
             this.randomizeButton.Name = "randomizeButton";
@@ -517,6 +521,7 @@
             this.MaximumSize = new System.Drawing.Size(1261, 714);
             this.MinimumSize = new System.Drawing.Size(1261, 714);
             this.Name = "MainForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MainForm";
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.panel1.ResumeLayout(false);

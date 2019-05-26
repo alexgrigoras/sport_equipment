@@ -274,7 +274,7 @@ namespace SportEquipment
         /// <summary>Every second</summary>
         private void Timer_Tick(object sender, EventArgs e)
         {
-            if (passwordBox_signup.Text != vpasswordBox_signup.Text)
+            if (passwordBox_signup.Text != vpasswordBox_signup.Text || activityTypecomboBox_signup.Text == "" || usernameBox_signup.Text == "")
             {
                 Color inactiv = Color.FromName("DimGray");
                 buttonCreateUser.BackColor = inactiv;

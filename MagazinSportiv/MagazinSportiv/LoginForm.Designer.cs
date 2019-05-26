@@ -60,7 +60,7 @@
             // 
             // buttonLogin
             // 
-            this.buttonLogin.BackColor = System.Drawing.Color.DarkOrange;
+            this.buttonLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(160)))), ((int)(((byte)(113)))));
             this.buttonLogin.FlatAppearance.BorderColor = System.Drawing.Color.OliveDrab;
             this.buttonLogin.FlatAppearance.BorderSize = 0;
             this.buttonLogin.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange;
@@ -78,7 +78,7 @@
             // 
             // buttonCreateUser
             // 
-            this.buttonCreateUser.BackColor = System.Drawing.Color.DarkOrange;
+            this.buttonCreateUser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(160)))), ((int)(((byte)(113)))));
             this.buttonCreateUser.FlatAppearance.BorderSize = 0;
             this.buttonCreateUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonCreateUser.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -176,6 +176,7 @@
             // 
             // activityTypecomboBox_signup
             // 
+            this.activityTypecomboBox_signup.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.activityTypecomboBox_signup.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.activityTypecomboBox_signup.ForeColor = System.Drawing.Color.DarkOrange;
             this.activityTypecomboBox_signup.FormattingEnabled = true;
@@ -198,7 +199,7 @@
             this.helpButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.helpButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.helpButton.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.helpButton.ForeColor = System.Drawing.Color.DarkOrange;
+            this.helpButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(160)))), ((int)(((byte)(113)))));
             this.helpButton.Location = new System.Drawing.Point(31, 529);
             this.helpButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.helpButton.Name = "helpButton";
@@ -214,7 +215,7 @@
             this.backButton_signup.FlatAppearance.BorderSize = 0;
             this.backButton_signup.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.backButton_signup.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.backButton_signup.ForeColor = System.Drawing.Color.DarkOrange;
+            this.backButton_signup.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(160)))), ((int)(((byte)(113)))));
             this.backButton_signup.Location = new System.Drawing.Point(36, 134);
             this.backButton_signup.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.backButton_signup.Name = "backButton_signup";
@@ -245,7 +246,7 @@
             this.vpasswordBox_signup.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.vpasswordBox_signup.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.vpasswordBox_signup.ForeColor = System.Drawing.Color.DarkOrange;
-            this.vpasswordBox_signup.Location = new System.Drawing.Point(36, 325);
+            this.vpasswordBox_signup.Location = new System.Drawing.Point(35, 327);
             this.vpasswordBox_signup.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.vpasswordBox_signup.Name = "vpasswordBox_signup";
             this.vpasswordBox_signup.PasswordChar = '*';
@@ -391,7 +392,7 @@
             this.GymHive.AutoSize = true;
             this.GymHive.BackColor = System.Drawing.Color.Transparent;
             this.GymHive.Font = new System.Drawing.Font("Tahoma", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GymHive.ForeColor = System.Drawing.Color.DarkOrange;
+            this.GymHive.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(160)))), ((int)(((byte)(113)))));
             this.GymHive.Location = new System.Drawing.Point(513, 107);
             this.GymHive.Name = "GymHive";
             this.GymHive.Size = new System.Drawing.Size(290, 388);
