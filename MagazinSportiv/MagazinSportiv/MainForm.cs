@@ -33,9 +33,13 @@ namespace SportEquipment
         private UserType _userType;
         private UserFactory _userFactory;
         private User _activeUser;
+        private int progress1, progress2, progress3, progress4;
 
         #endregion
-
+        public MainForm()
+        {
+            InitializeComponent();
+        }
         #region Constructor 
 
         /// <function>Login</function>
@@ -133,10 +137,13 @@ namespace SportEquipment
             string equipment = "";
 
             // get the values from text boxes
-
+            trainer = trainerComboBox.Text;
+            food = suplimentsComboBox.Text;
+            clothes = gearComboBox.Text;
+            equipment = suplimentsComboBox.Text;
 
             // create training program 
-             _activeUser.SelectTrainer(trainer);
+            _activeUser.SelectTrainer(trainer);
              _activeUser.SelectFood(food);
              _activeUser.SelectClothes(clothes);
              _activeUser.SelectEquipment(equipment);
@@ -154,5 +161,95 @@ namespace SportEquipment
         }
 
         #endregion
+
+        /// <function>ExitFormButton_Click</function>
+        /// <param name="sender"></param>
+        /// <param name="EventArgs"></param>
+        /// <summary>Exits the forme</summary>
+        private void ExitFormButton_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        /// <function>ExportButton_Click</function>
+        /// <param name="sender"></param>
+        /// <param name="EventArgs"></param>
+        /// <summary>Exits the forme</summary>
+        private void ExportButton_Click(object sender, EventArgs e)
+        {
+            SaveTraining();
+        }
+
+        /// <function>HelpButton_Click</function>
+        /// <param name="sender"></param>
+        /// <param name="EventArgs"></param>
+        /// <summary>Exits the forme</summary>
+        private void HelpButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        /// <function>RandomizeButton_Click</function>
+        /// <param name="sender"></param>
+        /// <param name="EventArgs"></param>
+        /// <summary>Exits the forme</summary>
+        private void RandomizeButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ReadyButton_Click(object sender, EventArgs e)
+        {
+            CreateTraining();
+        }
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+            
+
+            Timer timer = new Timer();
+            timer.Interval = (1 * 1000); // 10 secs
+            timer.Tick += new EventHandler(Timer_Tick);
+            timer.Start();
+        }
+
+        private void Timer_Tick(object sender, EventArgs e)
+        {
+            if(trainerComboBox.SelectedIndex==-1)
+            {
+                progress1=0;
+            }
+            else
+            {
+                progress1 = 25;
+            }
+            if (gearComboBox.SelectedIndex==-1)
+            {
+                progress2=0;
+            }
+            else
+            {
+                progress2=25;
+            }
+            if (suplimentsComboBox.SelectedIndex==-1)
+            {
+                progress3=0;
+            }
+            else
+            {
+                progress3=25;
+            }
+            if (equipmentComboBox.SelectedIndex==-1)
+            {
+                progress4=0;
+            }
+            else
+            {
+                progress4=25;
+            }
+           // progressLabel.Text = equipmentComboBox.SelectedIndex.ToString();
+            progressLabel.Text = (progress1+progress2+progress3+progress4).ToString();
+            circularProgressBar.Value = (progress1 + progress2 + progress3 + progress4);
+        }
     }
 }
