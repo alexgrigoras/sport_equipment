@@ -213,8 +213,6 @@ namespace SportEquipment
         /// <summary>Updates circular progress bar</summary>
         private void MainForm_Load(object sender, EventArgs e)
         {
-            
-
             Timer timer = new Timer();
             timer.Interval = (1 * 1000); // 10 secs
             timer.Tick += new EventHandler(Timer_Tick);
