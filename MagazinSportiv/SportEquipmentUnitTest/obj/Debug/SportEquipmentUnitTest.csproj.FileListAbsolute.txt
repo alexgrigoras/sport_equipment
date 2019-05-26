@@ -12,3 +12,19 @@ C:\Users\alex_\Source\Repos\sport_equipment\MagazinSportiv\SportEquipmentUnitTes
 C:\Users\alex_\Source\Repos\sport_equipment\MagazinSportiv\SportEquipmentUnitTest\obj\Debug\SportEquipmentUnitTest.csproj.CopyComplete
 C:\Users\alex_\Source\Repos\sport_equipment\MagazinSportiv\SportEquipmentUnitTest\obj\Debug\SportEquipmentUnitTest.dll
 C:\Users\alex_\Source\Repos\sport_equipment\MagazinSportiv\SportEquipmentUnitTest\obj\Debug\SportEquipmentUnitTest.pdb
+E:\Facultate\Anul 4\Semestrul II\IP\Proiect\sport_equipment\MagazinSportiv\SportEquipmentUnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+E:\Facultate\Anul 4\Semestrul II\IP\Proiect\sport_equipment\MagazinSportiv\SportEquipmentUnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+E:\Facultate\Anul 4\Semestrul II\IP\Proiect\sport_equipment\MagazinSportiv\SportEquipmentUnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+E:\Facultate\Anul 4\Semestrul II\IP\Proiect\sport_equipment\MagazinSportiv\SportEquipmentUnitTest\bin\Debug\SportEquipmentUnitTest.dll
+E:\Facultate\Anul 4\Semestrul II\IP\Proiect\sport_equipment\MagazinSportiv\SportEquipmentUnitTest\bin\Debug\SportEquipmentUnitTest.pdb
+E:\Facultate\Anul 4\Semestrul II\IP\Proiect\sport_equipment\MagazinSportiv\SportEquipmentUnitTest\bin\Debug\CircularProgressBar.dll
+E:\Facultate\Anul 4\Semestrul II\IP\Proiect\sport_equipment\MagazinSportiv\SportEquipmentUnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+E:\Facultate\Anul 4\Semestrul II\IP\Proiect\sport_equipment\MagazinSportiv\SportEquipmentUnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+E:\Facultate\Anul 4\Semestrul II\IP\Proiect\sport_equipment\MagazinSportiv\SportEquipmentUnitTest\bin\Debug\WinFormAnimation.dll
+E:\Facultate\Anul 4\Semestrul II\IP\Proiect\sport_equipment\MagazinSportiv\SportEquipmentUnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+E:\Facultate\Anul 4\Semestrul II\IP\Proiect\sport_equipment\MagazinSportiv\SportEquipmentUnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+E:\Facultate\Anul 4\Semestrul II\IP\Proiect\sport_equipment\MagazinSportiv\SportEquipmentUnitTest\obj\Debug\SportEquipmentUnitTest.csprojAssemblyReference.cache
+E:\Facultate\Anul 4\Semestrul II\IP\Proiect\sport_equipment\MagazinSportiv\SportEquipmentUnitTest\obj\Debug\SportEquipmentUnitTest.csproj.CoreCompileInputs.cache
+E:\Facultate\Anul 4\Semestrul II\IP\Proiect\sport_equipment\MagazinSportiv\SportEquipmentUnitTest\obj\Debug\SportEquipmentUnitTest.csproj.CopyComplete
+E:\Facultate\Anul 4\Semestrul II\IP\Proiect\sport_equipment\MagazinSportiv\SportEquipmentUnitTest\obj\Debug\SportEquipmentUnitTest.dll
+E:\Facultate\Anul 4\Semestrul II\IP\Proiect\sport_equipment\MagazinSportiv\SportEquipmentUnitTest\obj\Debug\SportEquipmentUnitTest.pdb

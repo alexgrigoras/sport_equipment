@@ -10,3 +10,15 @@ C:\Users\alex_\Source\Repos\sport_equipment\MagazinSportiv\FilePrinter\obj\Debug
 C:\Users\alex_\Source\Repos\sport_equipment\MagazinSportiv\FilePrinter\obj\Debug\LibFilePrinter.csproj.CoreCompileInputs.cache
 C:\Users\alex_\Source\Repos\sport_equipment\MagazinSportiv\FilePrinter\obj\Debug\FilePrinter.dll
 C:\Users\alex_\Source\Repos\sport_equipment\MagazinSportiv\FilePrinter\obj\Debug\FilePrinter.pdb
+C:\Users\Ioan\Source\Repos\sport_equipment\MagazinSportiv\FilePrinter\bin\Debug\FilePrinter.dll
+C:\Users\Ioan\Source\Repos\sport_equipment\MagazinSportiv\FilePrinter\bin\Debug\FilePrinter.pdb
+C:\Users\Ioan\Source\Repos\sport_equipment\MagazinSportiv\FilePrinter\obj\Debug\LibFilePrinter.csprojAssemblyReference.cache
+C:\Users\Ioan\Source\Repos\sport_equipment\MagazinSportiv\FilePrinter\obj\Debug\LibFilePrinter.csproj.CoreCompileInputs.cache
+C:\Users\Ioan\Source\Repos\sport_equipment\MagazinSportiv\FilePrinter\obj\Debug\FilePrinter.dll
+C:\Users\Ioan\Source\Repos\sport_equipment\MagazinSportiv\FilePrinter\obj\Debug\FilePrinter.pdb
+C:\Users\Ioan\Source\Repos\sport_equipment\MagazinSportiv\FilePrinter\bin\Debug\CircularProgressBar.dll
+C:\Users\Ioan\Source\Repos\sport_equipment\MagazinSportiv\FilePrinter\bin\Debug\WinFormAnimation.dll
+C:\Users\Ioan\Source\Repos\sport_equipment\MagazinSportiv\FilePrinter\obj\Debug\LibFilePrinter.csproj.CopyComplete
+E:\Facultate\Anul 4\Semestrul II\IP\Proiect\sport_equipment\MagazinSportiv\FilePrinter\bin\Debug\CircularProgressBar.dll
+E:\Facultate\Anul 4\Semestrul II\IP\Proiect\sport_equipment\MagazinSportiv\FilePrinter\bin\Debug\WinFormAnimation.dll
+E:\Facultate\Anul 4\Semestrul II\IP\Proiect\sport_equipment\MagazinSportiv\FilePrinter\obj\Debug\LibFilePrinter.csproj.CopyComplete
