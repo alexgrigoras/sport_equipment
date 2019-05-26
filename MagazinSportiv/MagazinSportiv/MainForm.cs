@@ -33,7 +33,7 @@ namespace SportEquipment
         private UserType _userType;
         private UserFactory _userFactory;
         private User _activeUser;
-        private int progress1, progress2, progress3, progress4;
+        private int _progress1, _progress2, _progress3, _progress4;
         private Form _login;
 
         #endregion
@@ -129,7 +129,7 @@ namespace SportEquipment
         private void SetDataToUI(List<string> Equipment, List<string> Food, List<string> Clothes, List<string> Trainer)
         {
             // put data on interface
-            foreach(string s in Equipment)
+            foreach (string s in Equipment)
             {
                 equipmentComboBox.Items.Add(s);
             }
@@ -231,7 +231,7 @@ namespace SportEquipment
         private void RandomizeButton_Click(object sender, EventArgs e)
         {
             Random random = new Random();
-            int newIndex = -1;
+            int newIndex;
 
             do
             {
@@ -247,37 +247,33 @@ namespace SportEquipment
                 MessageBox.Show("Randomize incomplete, no data found on equipment");
             }
 
-            newIndex = -1;
-
             do
             {
                 newIndex = random.Next(suplimentsComboBox.Items.Count);
             } while (newIndex == suplimentsComboBox.SelectedIndex && suplimentsComboBox.Items.Count > 1);
 
-            try { 
-            suplimentsComboBox.SelectedIndex = random.Next(suplimentsComboBox.Items.Count);
+            try
+            {
+                suplimentsComboBox.SelectedIndex = random.Next(suplimentsComboBox.Items.Count);
             }
             catch (ArgumentOutOfRangeException)
             {
                 MessageBox.Show("Randomize incomplete, no data found on suppliments");
             }
 
-            newIndex = -1;
-
             do
             {
                 newIndex = random.Next(gearComboBox.Items.Count);
             } while (newIndex == gearComboBox.SelectedIndex && gearComboBox.Items.Count > 1);
 
-            try { 
+            try
+            {
                 gearComboBox.SelectedIndex = random.Next(gearComboBox.Items.Count);
             }
             catch (ArgumentOutOfRangeException)
             {
                 MessageBox.Show("Randomize incomplete, no data found on gear");
             }
-
-            newIndex = -1;
 
             do
             {
@@ -319,7 +315,7 @@ namespace SportEquipment
         /// <param name="EventArgs"></param>
         /// <summary>Updates circular progress bar</summary>
         private void MainForm_Load(object sender, EventArgs e)
-        {         
+        {
             Timer timer = new Timer();
             timer.Interval = (1 * 1000); // 10 secs
             timer.Tick += new EventHandler(Timer_Tick);
@@ -332,41 +328,41 @@ namespace SportEquipment
         /// <summary>Every second</summary>
         private void Timer_Tick(object sender, EventArgs e)
         {
-            if(trainerComboBox.SelectedIndex==-1)
+            if (trainerComboBox.SelectedIndex == -1)
             {
-                progress1=0;
+                _progress1 = 0;
             }
             else
             {
-                progress1 = 25;
+                _progress1 = 25;
             }
-            if (gearComboBox.SelectedIndex==-1)
+            if (gearComboBox.SelectedIndex == -1)
             {
-                progress2=0;
+                _progress2 = 0;
             }
             else
             {
-                progress2=25;
+                _progress2 = 25;
             }
-            if (suplimentsComboBox.SelectedIndex==-1)
+            if (suplimentsComboBox.SelectedIndex == -1)
             {
-                progress3=0;
+                _progress3 = 0;
             }
             else
             {
-                progress3=25;
+                _progress3 = 25;
             }
-            if (equipmentComboBox.SelectedIndex==-1)
+            if (equipmentComboBox.SelectedIndex == -1)
             {
-                progress4=0;
+                _progress4 = 0;
             }
             else
             {
-                progress4=25;
+                _progress4 = 25;
             }
-           // progressLabel.Text = equipmentComboBox.SelectedIndex.ToString();
-            progressLabel.Text = (progress1+progress2+progress3+progress4).ToString();
-            circularProgressBar.Value = (progress1 + progress2 + progress3 + progress4);
+
+            progressLabel.Text = (_progress1 + _progress2 + _progress3 + _progress4).ToString();
+            circularProgressBar.Value = (_progress1 + _progress2 + _progress3 + _progress4);
         }
     }
 }
