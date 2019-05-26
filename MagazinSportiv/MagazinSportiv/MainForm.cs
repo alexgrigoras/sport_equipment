@@ -235,7 +235,14 @@ namespace SportEquipment
                 newIndex = random.Next(equipmentComboBox.Items.Count);
             } while (newIndex == equipmentComboBox.SelectedIndex && equipmentComboBox.Items.Count > 1);
 
-            equipmentComboBox.SelectedIndex = random.Next(equipmentComboBox.Items.Count);
+            try
+            {
+                equipmentComboBox.SelectedIndex = random.Next(equipmentComboBox.Items.Count);
+            }
+            catch (ArgumentOutOfRangeException)
+            {
+                MessageBox.Show("Randomize incomplete, no data found on equipment");
+            }
 
             newIndex = -1;
 
@@ -244,7 +251,13 @@ namespace SportEquipment
                 newIndex = random.Next(suplimentsComboBox.Items.Count);
             } while (newIndex == suplimentsComboBox.SelectedIndex && suplimentsComboBox.Items.Count > 1);
 
+            try { 
             suplimentsComboBox.SelectedIndex = random.Next(suplimentsComboBox.Items.Count);
+            }
+            catch (ArgumentOutOfRangeException)
+            {
+                MessageBox.Show("Randomize incomplete, no data found on suppliments");
+            }
 
             newIndex = -1;
 
@@ -253,7 +266,13 @@ namespace SportEquipment
                 newIndex = random.Next(gearComboBox.Items.Count);
             } while (newIndex == gearComboBox.SelectedIndex && gearComboBox.Items.Count > 1);
 
-            gearComboBox.SelectedIndex = random.Next(gearComboBox.Items.Count);
+            try { 
+                gearComboBox.SelectedIndex = random.Next(gearComboBox.Items.Count);
+            }
+            catch (ArgumentOutOfRangeException)
+            {
+                MessageBox.Show("Randomize incomplete, no data found on gear");
+            }
 
             newIndex = -1;
 
@@ -262,7 +281,14 @@ namespace SportEquipment
                 newIndex = random.Next(trainerComboBox.Items.Count);
             } while (newIndex == trainerComboBox.SelectedIndex && trainerComboBox.Items.Count > 1);
 
-            trainerComboBox.SelectedIndex = random.Next(trainerComboBox.Items.Count);
+            try
+            {
+                trainerComboBox.SelectedIndex = random.Next(trainerComboBox.Items.Count);
+            }
+            catch (ArgumentOutOfRangeException)
+            {
+                MessageBox.Show("Randomize incomplete, no data found on trainer");
+            }
         }
 
         /// <function>logoutButton_Click</function>
