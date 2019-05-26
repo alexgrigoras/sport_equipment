@@ -48,6 +48,8 @@ namespace SportEquipment
             string dateTime = DateTime.Now.ToString("dddd_dd_MMMM_yyyy_HH_mm");
             string fileName = "workouts/workout_" + dateTime + ".txt";
 
+            System.IO.Directory.CreateDirectory("workouts");
+
             Printer p = new Printer(fileName);
 
             if (!p.OpenFile())
