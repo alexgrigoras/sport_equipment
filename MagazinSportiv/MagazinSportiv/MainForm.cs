@@ -192,17 +192,25 @@ namespace SportEquipment
         /// <function>RandomizeButton_Click</function>
         /// <param name="sender"></param>
         /// <param name="EventArgs"></param>
-        /// <summary>Exits the forme</summary>
+        /// <summary>Randomizes items in comboBoxes</summary>
         private void RandomizeButton_Click(object sender, EventArgs e)
         {
 
         }
 
+        /// <function>ReadyButton_Click</function>
+        /// <param name="sender"></param>
+        /// <param name="EventArgs"></param>
+        /// <summary>reates the training based on selected options</summary>
         private void ReadyButton_Click(object sender, EventArgs e)
         {
             CreateTraining();
         }
 
+        /// <function>MainForm_Load</function>
+        /// <param name="sender"></param>
+        /// <param name="EventArgs"></param>
+        /// <summary>Updates circular progress bar</summary>
         private void MainForm_Load(object sender, EventArgs e)
         {
             
@@ -213,6 +221,10 @@ namespace SportEquipment
             timer.Start();
         }
 
+        /// <function>Timer_Tick</function>
+        /// <param name="sender"></param>
+        /// <param name="EventArgs"></param>
+        /// <summary>Every second</summary>
         private void Timer_Tick(object sender, EventArgs e)
         {
             if(trainerComboBox.SelectedIndex==-1)
