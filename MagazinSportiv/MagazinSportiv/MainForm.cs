@@ -165,14 +165,15 @@ namespace SportEquipment
             clothes = gearComboBox.Text;
             equipment = suplimentsComboBox.Text;
 
-            // create training program 
+            // create training program
             _activeUser.SelectTrainer(trainer);
             _activeUser.SelectFood(food);
             _activeUser.SelectClothes(clothes);
             _activeUser.SelectEquipment(equipment);
 
             // display training program
-
+            MessageBox.Show("Selected training: " +
+                trainer + " " + food + " " + clothes + " " + equipment);
         }
 
         /// <function>SaveTraining</function>
@@ -210,7 +211,7 @@ namespace SportEquipment
         /// <summary>Exits the forme</summary>
         private void HelpButton_Click(object sender, EventArgs e)
         {
-
+            System.Diagnostics.Process.Start("Gestionarea_activitatii_fitness.chm");
         }
 
         /// <function>RandomizeButton_Click</function>

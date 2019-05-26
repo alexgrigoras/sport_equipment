@@ -296,7 +296,7 @@ namespace SportEquipment
         /// <summary>Opens Help Center</summary>
         private void HelpButton_Click(object sender, EventArgs e)
         {
-
+            System.Diagnostics.Process.Start("Gestionarea_activitatii_fitness.chm");
         }
         // This method will change the square button to a circular button by 
         // creating a new circle-shaped GraphicsPath object and setting it 
