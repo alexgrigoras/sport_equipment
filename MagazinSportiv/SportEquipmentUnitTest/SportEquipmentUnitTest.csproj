@@ -63,6 +63,16 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FilePrinter\LibFilePrinter.csproj">
+      <Project>{dd2e05a7-37d3-42ad-a991-e4cda848b496}</Project>
+      <Name>LibFilePrinter</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MagazinSportiv\SportEquipment.csproj">
+      <Project>{4ca3e352-e2f0-4918-bd15-43864dfa5705}</Project>
+      <Name>SportEquipment</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
