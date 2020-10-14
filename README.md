@@ -1,17 +1,14 @@
 # Sport Equipment
 
----
+## Description
+Windows application for choosing the sports equipment for the chosen activity.
 
-## Descriere
+## Authors
+* Alexandru Grigoras
+* Andreea Bodnariu 
+* Iuliana Luncanu
+* Ioan Suflet
 
-Aplicatie pentru alegerea echipamentului sportiv in functie de sportul sau activitatea aleasa
-
----
-
-## Autori
-
-* Grigoras Alexandru
-* Bodnariu Andreea 
-* Luncanu Iuliana
-* Suflet Ioan
+## License
+The application is licensed under the MIT License.
 
